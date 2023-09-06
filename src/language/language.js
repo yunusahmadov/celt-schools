@@ -1,6 +1,7 @@
 
 
 export const az_lang = {
+      //MainPage
     nav: [
         "Ana səhifə",
         "A Level Diplomu",
@@ -11,6 +12,11 @@ export const az_lang = {
         "Kampus  Ünvanları",
         "Qeydiyyat"
     ],
+    servicesTrend:"Trend kurslar",
+    servicesDiplom:"Diplom",
+    servicesStudents:"Tələbələrimiz",
+    servicesAcceptance:"Qəbul şərtləri",
+
     welcome: "XOŞGƏLMIŞSINIZ!",
     world: "Dünya təhsiliniz CELT ilə başlayır.",
     strong: "CELT High School ilə dünyanın ən güclü universitetlərinə hazırlıq keçmədən qəbul ol.",
@@ -27,7 +33,7 @@ export const az_lang = {
         center:"Mərkəz",
     },
     whyCelt:"Niyə CELT School",
-    true:"DOĞRU SEÇIM, PLANLI TƏHSIL SIZIN GƏLƏCƏK HƏYATINIZIN VƏ KARIYERANIZIN ƏSASINI TƏŞKIL EDƏCƏK. SIZ ARZULADIĞINIZ UNIVERSITETLƏRI SEÇIRSINIZ, BIZ SIZIN HƏDƏFLƏRINIZI HƏYATA KEÇIRIRIK. STANDARD ÖZƏL MƏKTƏBLƏRDƏN FƏRQLI OLARAQ, CELT SIZI VIP DƏRSLƏRLƏ YALNIZ HƏDƏFƏ DOĞRU APARIR. STRATEJI YANAŞIMLA, INTELEKTUAL OXUYARAQ BEYNƏLXALQ DIPLOMA VƏ ƏN GÜCLÜ UNIVERSITETLƏRƏ QƏBUL ƏLDƏ EDIRSINIZ.",
+    plans:"DOĞRU SEÇIM, PLANLI TƏHSIL SIZIN GƏLƏCƏK HƏYATINIZIN VƏ KARIYERANIZIN ƏSASINI TƏŞKIL EDƏCƏK. SIZ ARZULADIĞINIZ UNIVERSITETLƏRI SEÇIRSINIZ, BIZ SIZIN HƏDƏFLƏRINIZI HƏYATA KEÇIRIRIK. STANDARD ÖZƏL MƏKTƏBLƏRDƏN FƏRQLI OLARAQ, CELT SIZI VIP DƏRSLƏRLƏ YALNIZ HƏDƏFƏ DOĞRU APARIR. STRATEJI YANAŞIMLA, INTELEKTUAL OXUYARAQ BEYNƏLXALQ DIPLOMA VƏ ƏN GÜCLÜ UNIVERSITETLƏRƏ QƏBUL ƏLDƏ EDIRSINIZ.",
     // futureCard:{
     //     futureTitle:"GƏLƏCƏK SAHƏNIZ",
     //     futureText:"Biz tələbə və valideynlə bərabər işləyərək, tələbənin bacarıqlı olduğu sahəni kəşf edib, ona ən uyğun sahə seçməsinə kömək edirik. Doğru seçim, doğru yatırım",
@@ -121,6 +127,7 @@ export const az_lang = {
 }
 
 export const en_lang={
+    //MainPage
     nav: [
         "Home",
         "A Level Diploma",
@@ -131,5 +138,9 @@ export const en_lang={
         "Campus Addresses",
         "Registration"
     ],
+    servicesDiplom:"Diploma",
+    servicesStudents:"Students",
+    servicesAcceptance:"Acceptance conditions",
+    servicesTrend:"Trending courses",
     future:"FUTURE",
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import Language from '../../features/LanguageRedux/Language'
+import Language from '../features/LanguageRedux/Language'
 
 function Toolbar() {
   return (

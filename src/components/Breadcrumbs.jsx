@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-function Breadcrumbs() {
+function Breadcrumbs({pageName}) {
   const language=useSelector((state)=>state.language.value)
     
   return (
@@ -17,7 +17,7 @@ function Breadcrumbs() {
                   Home
                 </a>
               </li>
-              <li>Our Courses</li>
+              <li>{pageName}</li>
             </ul>
           </div>
         </div>
