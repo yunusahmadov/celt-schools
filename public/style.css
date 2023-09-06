@@ -9022,6 +9022,8 @@ ul {
     -webkit-transform: rotate(-40deg);
   }
 }
+
+
 .shadow{
   width: 100%;
   height:100%;
@@ -9038,22 +9040,122 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+    gap: 20px;
 }
+.contact-card-section2{
+  max-width: 80%;
+  margin: 70px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.contact-card-section2 .contact-card{
+  width: 250px;
+
+}
+
 .contact-card{
-border: 1px solid black;
+/* border: 2px solid black; */
 padding: 10px 20px;
-box-shadow: 6px 10px 21px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
 width: 350px;
-height: 400px;
+height: 450px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+border-radius: 10px;
+transition: .5s;
+ /* background-color: #f0f0f0 */
+
 }
+
 .contact-card h2{
   color: #313233;
+  border-bottom: 1px solid orange;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .contact-card h3{
   color: #54595F;
+  font-size: 16px;
+}
+.contact-card a{
+  color: #333;
+}
+.contact-card p{
+margin-bottom: 10px;
+display: flex; 
+gap: 10px;
+justify-content: center;
+align-items: center;
+font-size: 18px;
+color: #ffaa30;
+min-width: 125px;
+justify-content: space-between;
+}
+.contact-card span{
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.wp-message,
+.page-check{
+  border: 1px solid #212121;
+  padding: 5px 20px;
+  border-radius:20px; 
+  color:#ff3115;
+  display: flex; 
+  justify-content: center;
+  align-items:center;
+  gap: 5px;
+  border: 1px solid #ff3115;
+  transition: .5;
+  
+
+}
+.wp-message:hover{
+  color: white;
+  border: 1px solid green;
+  background-color: green;
+  transform: translateY(-5px);
+
+}
+.wp-message:hover svg path{
+  fill: white;
+}
+.page-check{
+  border: 1px solid #ff3115;
+  margin-top: 12px;
+}
+.page-check:hover{
+  color: white;
+  border: 1px solid blue;
+  background-color:blue;
+  transform: translateY(-5px);
+
+}
+.center-icons{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.center-icons i{
+  background-color: #ff3115;
+  color:white;
+  border-radius: 50%;
+  padding: 10px;
+  transition: .2s;
+  border: 1px solid #ff3115;
+  width: 35px;
+  height: 35px;
+}
+.center-icons i:hover{
+  transform: scale(1.15);
+  background-color: white;
+  color: #ff3115;
 }

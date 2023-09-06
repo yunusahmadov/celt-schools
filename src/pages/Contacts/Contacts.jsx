@@ -137,7 +137,7 @@ function Contacts() {
             }
           />
 
-<ContactsCard
+            <ContactsCard
             centerName={"CELT Nizami"}
             centerPhone1={"050 787 57 66"}
             centerPhone2={"012 436 86 87"}
@@ -174,6 +174,136 @@ function Contacts() {
             }
           />
         </div>
+        <div className="contact-card-section2">
+          <ContactsCard
+            centerName={"CELT Sumqayıt"}
+            centerPhone1={"050 550 51 91"}
+            centerPhone2={"018 6540045"}
+            centerLocation={
+              "https://www.google.com/maps/place/Karvan+shopping+mall/@40.5865021,49.6626985,16z/data=!4m9!1m2!2m1!1skarvan+mall!3m5!1s0x403096c04ebf01cf:0x96b1ceca01f586d6!8m2!3d40.5897607!4d49.673983!16s%2Fg%2F1hf36ftch?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtsumgayit/"
+            }
+          />
+                <ContactsCard
+            centerName={"CELT Gənclik"}
+            centerPhone1={"050 348 22 18"}
+            centerPhone2={"012 564 26 86"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Colleges+G%C9%99nclik+Ingilis+dili+kurslar%C4%B1/@40.4088145,49.8552118,13z/data=!4m6!3m5!1s0x40307d12e719ca1d:0x276013c5c8bd4022!8m2!3d40.4027091!4d49.8491263!16s%2Fg%2F11h_ws78qr?shorturl=1"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtcollegeshaziaslanov/"
+            }
+          />
+                <ContactsCard
+            centerName={"CELT IT Xətai"}
+            centerPhone1={"050 588 15 17"}
+            centerPhone2={"012 496 45 76"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+IT+College/@40.3816059,49.8660174,20.65z/data=!4m5!3m4!1s0x0:0xb68ad4dfa097721b!8m2!3d40.3816259!4d49.8660736?coh=164777&entry=tt&shorturl=1"
+            }
+            centerFacebook={"https://www.facebook.com/people/CELT-IT-College/100076930546327/"}
+            centerInstagram={
+              "https://www.instagram.com/celt.it.college/ "
+            }
+          />
+                <ContactsCard
+            centerName={"CELT IT İçərişəhər"}
+            centerPhone1={"050 588 15 17"}
+            centerPhone2={"012 505 34 34"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+High+School/@40.3694055,49.8278814,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d25f9a6067d:0x8624d4910168579!8m2!3d40.3694055!4d49.8278814!16s%2Fg%2F11qgkk0qck?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/people/CELT-IT-College/100076930546327/"}
+            centerInstagram={
+              "https://www.instagram.com/celt.it.college/ "
+            }
+          />
+          </div>
+        <div className="contact-card-section">
+        <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Nərimanov"}
+            centerPhone1={"070 596 04 51"}
+            centerPhone2={"012 408 43 20"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschool_narimanov/ "
+            }
+          />
+                  <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Elmlər"}
+            centerPhone1={"070 686 80 67"}
+            centerPhone2={"012 538 38 33"}
+            centerLocation={
+              "https://www.google.com/maps/place/40%C2%B022'20.1%22N+49%C2%B049'11.0%22E/@40.3722572,49.817544,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x341a368292a84e61!8m2!3d40.3722572!4d49.8197327?hl=tr&shorturl=1"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschoolelmler"
+            }
+          />
+                  <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Sahil"}
+            centerPhone1={"070 629 32 42"}
+            centerPhone2={"012 598 10 30"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Elementary+School+Sahil/@40.374947,49.840019,17z/data=!3m1!4b1!4m6!3m5!1s0x40307dc851001947:0x623842e35ff0f0da!8m2!3d40.3749429!4d49.8425939!16s%2Fg%2F11h008my1r?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschool_sahil"
+            }
+          />
+            <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Həzi"}
+            centerPhone1={"050 611 91 00"}
+            centerPhone2={"012 599 57 57"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschool_narimanov/ "
+            }
+          />
+               <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Xətai"}
+            centerPhone1={"050 588 15 18"}
+            centerPhone2={"012 496 45 76"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Colleges+Xetai+-+%C4%B0ngilis+dili+kurslari/@40.3817981,49.8639911,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1b3e601b49:0xb923a92b9b1a3639!8m2!3d40.381794!4d49.866566!16s%2Fg%2F11clyfsqpd?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschool_sahil/ "
+            }
+          />
+               <ContactsCard
+            centerName={"CELT Primary"}
+            primaryText={"Sumqayıt  "}
+            centerPhone1={"050 611 91 00"}
+            centerPhone2={"012 599 57 57"}
+            centerLocation={
+              "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
+            }
+            centerFacebook={"https://www.facebook.com/celtscollege/"}
+            centerInstagram={
+              "https://www.instagram.com/celtpreschool_narimanov/ "
+            }
+          />
+            </div>
       </div>
       {/* <!-- Contact Section End -->      */}
 
