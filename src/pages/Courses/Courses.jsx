@@ -2,12 +2,11 @@ import React from "react";
 import CoursesCard from "./CoursesCard";
 import { az_lang } from "../../language/language";
 import { imagesArr } from "../../imagesArr";
-import Language from "../../features/LanguageRedux/Language";
 import Preloader from "../../components/Preloader";
-import Toolbar from "./Toolbar";
+import Toolbar from "../../components/Toolbar";
 import Header from "./Header";
 import { useSelector } from "react-redux";
-import Breadcrumbs from "./Breadcrumbs";
+import Breadcrumbs from "../../components/Breadcrumbs";
 import OurCourses from "./OurCourses";
 import PartnerCarousel from "./PartnerCarousel";
 import Footer from "./Footer";
@@ -18,12 +17,14 @@ function Courses() {
   console.log(language);
   return (
     <body className="inner-page">
-    <Preloader/>
+    {/* <Preloader/> */}
       <div className="full-width-header">
         <Toolbar/>
       <Header/>
       </div>
-      <Breadcrumbs/>
+      <Breadcrumbs
+    pageName={"Our Courses"}
+    />
       {/* <!-- Courses Start --> */}
       <OurCourses/>
       {/* <!-- Courses End --> */}

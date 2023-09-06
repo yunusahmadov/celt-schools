@@ -1,261 +1,35 @@
 import React from 'react'
 import { az_lang } from '../../language/language';
 import Preloader from '../../components/Preloader';
+import Toolbar from '../../components/Toolbar';
+import Header from './Header';
+import Footer from '../Courses/Footer';
+import Services from './Services';
 
 function MainPage() {
 
-    console.log(az_lang);
   return (
     <body className="home1">
     {/* <!--Preloader area start here--> */}
-    <Preloader/>
+    {/* <Preloader/> */}
     {/* <!--Preloader area end here-->
     
     <!--Full width header Start--> */}
     <div className="full-width-header">
 
         {/* <!-- Toolbar Start --> */}
-        <div className="rs-toolbar">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="rs-toolbar-left">
-                            <div className="welcome-message">
-                                <i className="fa fa-bank"></i><span>Welcome to Edulearn</span> 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="rs-toolbar-right">
-                            <div className="toolbar-share-icon">
-                                <ul>
-                                    <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                            <a href="#" className="apply-btn">Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Toolbar/>
         {/* <!-- Toolbar End --> */}
-        
-        {/* <!--Header Start--> */}
-        <header id="rs-header" className="rs-header">
-            
-            {/* <!-- Header Top Start --> */}
-            <div className="rs-header-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 col-sm-12">
-                            <div className="header-contact">
-                                <div id="info-details" className="widget-text">
-                                    <i className="glyph-icon flaticon-email"></i>
-                                    <div className="info-text">
-                                        <a href="mailto:info@domain.com">
-                                            <span>Mail Us</span>
-                                            info@domain.com
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 col-sm-12">
-                            <div className="logo-area text-center">
-                                <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
-                            </div>
-                        </div>
-                        <div className="col-md-4 col-sm-12">
-                            <div className="header-contact pull-left">
-                                <div id="phone-details" className="widget-text">
-                                    <i className="glyph-icon flaticon-phone-call"></i>
-                                    <div className="info-text">
-                                        <a href="tel:4155551234">
-                                            <span>Call Us</span>
-                                            +1234-567-890
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>				
-                </div>
-            </div>
-            {/* <!-- Header Top End -->
+           {/* <!--Header Start--> */}
+        <Header/>
 
-            <!-- Menu Start --> */}
-            <div className="menu-area menu-sticky">
-                <div className="container">
-                    <div className="main-menu">
-                        <div className="row relative">
-                            <div className="col-sm-12">
-                                {/* <!-- <div id="logo-sticky" className="text-center">
-                                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-                                </div> --> */}
-                                <a className="rs-menu-toggle"><i className="fa fa-bars"></i>Menu</a>
-                                <nav className="rs-menu">
-                                    <ul className="nav-menu">
-                                        {/* <!-- Home --> */}
-                                        <li className="current-menu-item current_page_item menu-item-has-children"> <a href="#" className="home">Home</a>
-                                            <ul className="sub-menu">
-                                              <li className="active"><a href="index.html">Home One</a> </li>
-                                              <li><a href="index2.html">Home Two</a> </li>
-                                              <li><a href="index3.html">Home Three</a></li>
-                                              <li><a href="index4.html">Home Four</a> </li>
-                                              <li><a href="index5.html">Home Five</a> </li>
-                                              <li><a href="instructor-home.html">Home Instructor</a> </li>
-                                              <li><a href="index7.html">Home Seven</a> </li>
-                                              <li><a href="index8.html">Home Eight</a> </li>
-                                            </ul>
-                                        </li>
-                                        {/* <!-- End Home -->  */}
-                                        
-                                        {/* <!--About Menu Start--> */}
-                                        <li className="menu-item-has-children"> <a href="#">About Us</a>
-                                            <ul className="sub-menu">
-                                                <li> <a href="about.html">About One</a></li>
-                                                <li><a href="about2.html">About Two</a></li>
-                                                <li><a href="about3.html">About Three</a></li>
-                                            </ul>
-                                        </li>
-                                        {/* <!--About Menu End-->  */}
-
-                                        {/* <!-- Drop Down Pages Start --> */}
-                                        <li className="rs-mega-menu mega-rs"> <a href="#">Mega</a>
-                                            <ul className="mega-menu"> 
-                                                <li className="mega-menu-container">
-                                                    <div className="mega-menu-innner">
-                                                        <div className="single-magemenu">
-                                                            <ul className="sub-menu">
-                                                                <li> <a href="about.html">About One</a></li>
-                                                                <li><a href="about2.html">About Two</a></li>
-                                                                <li><a href="blog.html">Blog</a></li>
-                                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="single-magemenu">
-                                                            <ul className="sub-menu">
-                                                                <li> <a href="teachers.html">Teachers</a> </li>
-                                                                <li> <a href="teachers-without-filter.html">Teachers Without Filter</a> </li> 
-                                                                <li> <a href="teachers-single.html">Teachers Single</a> </li>
-                                                                <li> <a href="contact.html">Contact</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="single-magemenu">
-                                                            <ul className="sub-menu">
-                                                                <li> <a href="gallery.html">Gallery One</a> </li>
-                                                                <li> <a href="gallery2.html">Gallery Two</a> </li> 
-                                                                <li> <a href="gallery3.html">Gallery Three</a> </li>
-                                                                <li><a href="error-404.html">Error 404</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="single-magemenu">
-                                                            <ul className="sub-menu">
-                                                                <li> <a href="shop.html">Shop</a> </li> 
-                                                                <li> <a href="shop-details.html">Shop Details</a> </li>
-                                                
-                                                                <li><a href="cart.html">Cart</a></li>
-                                                                <li><a href="checkout.html">Checkout</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        {/* <!--Drop Down Pages End -->
-                                        
-                                        <!--Courses Menu Start--> */}
-                                        <li className="menu-item-has-children"> <a href="#">Courses</a>
-                                          <ul className="sub-menu">
-                                            <li><a href="courses.html">Courses One</a></li>
-                                            <li><a href="courses2.html">Courses Two</a></li>
-                                            <li><a href="courses-details.html">Courses Details</a></li>
-                                              <li><a href="courses-details2.html">Courses Details 2</a></li>
-                                          </ul>
-                                        </li>
-                                        {/* <!--Courses Menu End--> */}
-                                        
-                                        {/* <!--Events Menu Start--> */}
-                                        <li className="menu-item-has-children"> <a href="#">Events</a>
-                                            <ul className="sub-menu">
-                                                <li><a href="events.html">Events</a></li>
-                                                <li><a href="events-details.html">Events Details</a></li>
-                                                <li> <a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </li>
-                                        
-                                        {/* <!--Events Menu End--> */}
-                                        
-                                        {/* <!-- Drop Down --> */}
-                                        <li className="menu-item-has-children"> <a href="#">Pages</a>
-                                            <ul className="sub-menu"> 
-                                                <li className="menu-item-has-children"> <a href="#">Teachers</a>
-                                                  <ul className="sub-menu">
-                                                    <li> <a href="teachers.html">Teachers</a> </li>
-                                                    <li> <a href="teachers-without-filter.html">Teachers Without Filter</a> </li> 
-                                                    <li> <a href="teachers-single.html">Teachers Single</a> </li>
-                                                  </ul>
-                                                </li>
-                                                
-                                                <li className="menu-item-has-children"> <a href="#">Gallery</a>
-                                                  <ul className="sub-menu">
-                                                    <li> <a href="gallery.html">Gallery One</a> </li>
-                                                    <li> <a href="gallery2.html">Gallery Two</a> </li> 
-                                                    <li> <a href="gallery3.html">Gallery Three</a> </li>
-                                                  </ul>
-                                                </li>
-                                                
-                                                <li className="menu-item-has-children"> <a href="#">Shop</a>
-                                                  <ul className="sub-menu">
-                                                    <li> <a href="shop.html">Shop</a> </li> 
-                                                    <li> <a href="shop-details.html">Shop Details</a> </li>
-                                                  </ul>
-                                                </li>
-                                                
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                
-                                                <li><a href="error-404.html">Error 404</a></li>
-                                            </ul>
-                                        </li>
-                                        {/* <!--End Icons -->
-                                        
-                                        <!--blog Menu Start--> */}
-                                        <li className="menu-item-has-children"> <a href="#">Blog</a>
-                                            <ul className="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        {/* <!--blog Menu End-->
-                                        
-                                        <!--Contact Menu Start--> */}
-                                        <li> <a href="contact.html">Contact</a></li>
-                                        {/* <!--Contact Menu End--> */}
-                                    </ul>
-                                </nav>
-                                <div className="right-bar-icon rs-offcanvas-link text-right">
-                                    <a className="hidden-xs rs-search" data-target=".search-modal" data-toggle="modal" href="#"><i className="fa fa-search"></i></a>
-
-                                    <a id="nav-expander" className="nav-expander fixed"><i className="fa fa-bars fa-lg white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* <!-- Menu End --> */}
-        </header>
         {/* <!--Header End--> */}
 
     </div>
     {/* <!--Full width header End--> */}
     
     {/* <!-- Slider Area Start --> */}
-    <div id="rs-slider" class="slider-overlay-2">     
+    <div id="rs-slider" class="slider-overlay-2" style={{height:"50vh"}}>     
         	<div id="home-slider" class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="0" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="false" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
 				{/* <!-- Item 1 --> */}
 				<div class="item active">
@@ -313,56 +87,7 @@ function MainPage() {
     {/* <!-- Slider Area End --> */}
     
     {/* <!-- Services Start --> */}
-    <div className="rs-services rs-services-style1">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-3 col-md-6">
-                    <div className="services-item rs-animation-hover">
-                        <div className="services-icon">
-                            <i className="fa fa-american-sign-language-interpreting rs-animation-scale-up"></i>                    	        
-                        </div>
-                        <div className="services-desc">
-                            <h4 className="services-title">Trending Courses</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                    <div className="services-item rs-animation-hover">
-                        <div className="services-icon">                    	        
-                            <i className="fa fa-book rs-animation-scale-up"></i>
-                        </div>
-                        <div className="services-desc">
-                            <h4 className="services-title">Books & Liberary</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                    <div className="services-item rs-animation-hover">
-                        <div className="services-icon">
-                            <i className="fa fa-user rs-animation-scale-up"></i>
-                        </div>
-                        <div className="services-desc">
-                            <h4 className="services-title">Certified Teachers</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6">
-                    <div className="services-item rs-animation-hover">
-                        <div className="services-icon">
-                            <i className="fa fa-graduation-cap rs-animation-scale-up"></i>
-                        </div>
-                        <div className="services-desc">
-                            <h4 className="services-title">Certification</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <Services/>
     {/* <!-- Services End --> */}
 
     {/* <!-- About Us Start --> */}
@@ -1107,128 +832,7 @@ function MainPage() {
     {/* <!-- Partner End --> */}
    
     {/* <!-- Footer Start --> */}
-    <footer id="rs-footer" className="bg3 rs-footer">
-        <div className="container">
-            {/* <!-- Footer Address --> */}
-            <div>
-                <div className="row footer-contact-desc">
-                    <div className="col-md-4">
-                        <div className="contact-inner">
-                            <i className="fa fa-map-marker"></i>
-                            <h4 className="contact-title">Address</h4>
-                            <p className="contact-desc">
-                                503  Old Buffalo Street<br/>
-                                Northwest #205, New York-3087
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="contact-inner">
-                            <i className="fa fa-phone"></i>
-                            <h4 className="contact-title">Phone Number</h4>
-                            <p className="contact-desc">
-                                +3453-909-6565<br/>
-                                +2390-875-2235
-                            </p>
-                        </div>
-                    </div>
-                    <div className="col-md-4">
-                        <div className="contact-inner">
-                            <i className="fa fa-map-marker"></i>
-                            <h4 className="contact-title">Email Address</h4>
-                            <p className="contact-desc">
-                                infoname@gmail.com<br/>
-                                www.yourname.com
-                            </p>
-                        </div>
-                    </div>
-                </div>					
-            </div>
-        </div>
-        
-        {/* <!-- Footer Top --> */}
-        <div className="footer-top">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-3 col-md-12">
-                        <div className="about-widget">
-                            <img src="images/logo-footer.png" alt="Footer Logo"/>
-                            <p>We create Premium Html Themes for more than three years. Our team goal is to reunite the elegance of unique.</p>
-                            <p className="margin-remove">We create Unique and Easy To Use Flexible Html Themes.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-12">
-                        <h5 className="footer-title">RECENT POSTS</h5>
-                        <div className="recent-post-widget">
-                            <div className="post-item">
-                                <div className="post-date">
-                                    <span>28</span>
-                                    <span>June</span>
-                                </div>
-                                <div className="post-desc">
-                                    <h5 className="post-title"><a href="#">While the lovely valley team work</a></h5>
-                                    <span className="post-category">Keyword Analysis</span>
-                                </div>
-                            </div>
-                            <div className="post-item">
-                                <div className="post-date">
-                                    <span>28</span>
-                                    <span>June</span>
-                                </div>
-                                <div className="post-desc">
-                                    <h5 className="post-title"><a href="#">I must explain to you how all this idea</a></h5>
-                                    <span className="post-category">Spoken English</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-12">
-                        <h5 className="footer-title">OUR SITEMAP</h5>
-                        <ul className="sitemap-widget">
-                            <li className="active"><a href="index.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
-                            <li ><a href="about.html"><i className="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
-                            <li><a href="courses.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Courses</a></li>
-                            <li><a href="courses-details.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Courses Details</a></li>
-                            <li><a href="events.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Events</a></li>
-                            <li><a href="events-details.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Events Details</a></li>                                
-                            <li><a href="blog.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>
-                            <li><a href="blog-details.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Blog Details</a></li>
-                            <li><a href="teachers.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Teachers</a></li>
-                            <li><a href="teachers-single.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Teachers Details</a></li>
-                            <li><a href="contact.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
-                            <li><a href="error-404.html"><i className="fa fa-angle-right" aria-hidden="true"></i>Error 404</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-3 col-md-12">
-                        <h5 className="footer-title">NEWSLETTER</h5>
-                        <p>Sign Up to Our Newsletter to Get Latest Updates &amp; Services</p>
-                        <form className="news-form">
-                            <input type="text" className="form-input" placeholder="Enter Your Email"/>
-                            <button type="submit" className="form-button"><i className="fa fa-arrow-right" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
-                </div>
-                <div className="footer-share">
-                    <ul>
-                        <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fa fa-pinterest-p"></i></a></li>
-                        <li><a href="#"><i className="fa fa-vimeo"></i></a></li>    
-                    </ul>
-                </div>                                
-            </div>
-        </div>
-
-        {/* <!-- Footer Bottom --> */}
-        <div className="footer-bottom">
-            <div className="container">
-                <div className="copyright">
-                    <p>© 2018 <a href="#">RS Theme</a>. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <Footer/>
     {/* <!-- Footer End --> */}
 
     {/* <!-- start scrollUp  --> */}

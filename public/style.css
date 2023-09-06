@@ -599,6 +599,7 @@ ul {
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
+  height: 35vh;
 }
 .bg4 {
   background-image: url(images/bg/cta-bg.jpg);
@@ -961,7 +962,7 @@ ul {
   padding-bottom: 80px !important;
 }
 .pb-170 {
-  padding-bottom: 170px !important;
+  /* padding-bottom: 170px !important; */
 }
 .mt-5 {
   margin-top: 5px !important;
@@ -8465,7 +8466,7 @@ ul {
   font-size: 15px;
 }
 .rs-footer .footer-top {
-  padding-top: 140px;
+  padding-top: 60px;
 }
 .rs-footer .footer-top .recent-post-widget .post-item {
   display: -ms-flexbox;
@@ -9020,4 +9021,39 @@ ul {
     transform: rotate(-40deg);
     -webkit-transform: rotate(-40deg);
   }
+}
+.shadow{
+  width: 100%;
+  height:100%;
+  background-color:rgba(1,1,1,.7);
+}
+.contact-section{
+  padding: 50px 0;
+  text-align: center;
+  
+}
+.contact-card-section{
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-card{
+border: 1px solid black;
+padding: 10px 20px;
+box-shadow: 6px 10px 21px 0px rgba(0, 0, 0, 0.2);
+width: 350px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contact-card h2{
+  color: #313233;
+}
+.contact-card h3{
+  color: #54595F;
 }
