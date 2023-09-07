@@ -1,2 +1,2 @@
-Celt Schools
+Celt Schools Project
 
