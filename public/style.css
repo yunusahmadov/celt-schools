@@ -9343,3 +9343,9 @@ display: flex
   flex-direction: column;
   justify-content: center;
 }
+.right_menu_togle{
+/* right: 0px !important;  */
+}
+.sidebarnav_menu.main-menu li.menu-item-has-children:before{
+display: none;
+}
