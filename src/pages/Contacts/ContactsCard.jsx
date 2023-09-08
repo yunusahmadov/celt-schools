@@ -1,6 +1,10 @@
 import React from 'react'
 
-function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,centerFacebook,centerInstagram,primaryText}) {
+function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,centerFacebook,centerInstagram,primaryText,centerWebsite}) {
+  
+  let cut=centerPhone1.replaceAll(' ', '').substring(1)
+  // console.log(cut);
+ 
   return (
     <div className="contact-card">
       <h2>{centerName}</h2>
@@ -18,7 +22,7 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
         {centerPhone2}
         </a>
       </p>
-        <a className='wp-message' href="#">
+        <a className='wp-message' href={`https://wa.me/+994${cut}`}>
           Mesaj yaz
           <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +38,7 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
     />
   </svg>
           </a>
-        <a className='page-check' href="#">Səhifəyə bax</a>
+        <a className='page-check' href={`${centerWebsite}`}>Səhifəyə bax</a>
       <div className="center-icons">
         <a href={centerLocation}>
           <i class="fa fa-map-marker"></i>

@@ -3439,6 +3439,7 @@ ul {
   margin-bottom: 30px;
   border: 1px solid #dddddd;
   transition: all 0.35s ease 0s;
+
 }
 .rs-courses-3 .course-item .course-img {
   position: relative;
@@ -9158,4 +9159,181 @@ justify-content: space-between;
   transform: scale(1.15);
   background-color: white;
   color: #ff3115;
+}
+.main-top-slider{
+  height: 90vh; 
+
+}
+/* Main top slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px !important;
+  position: absolute !important;
+  gap: 5px;
+}
+.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
+  left: 80% !important;
+  top: 0 !important;
+}
+.swiper-pagination-bullet{
+  width: 5px !important;
+  height: 30px !important;
+  border-radius: 0 !important;
+  background-color: #fc7f0c !important;
+}
+.main-top-slider-container{
+  width: 100%;
+  height: 100%;
+  background-position: center center; 
+  background-size: cover  ;
+}
+.slider-shadow{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+.main-top-slider-container-1{
+  background-image:url("https://keenitsolutions.com/products/html/edulearn/edulearn-demo/images/slider/home1/slide1.jpg");
+}
+.main-top-slider-container-2{
+  background-image:url("https://keenitsolutions.com/products/html/edulearn/edulearn-demo/images/slider/home1/slide2.jpg");
+}
+.main-top-slider-container-3{
+  background-image:url("https://keenitsolutions.com/products/html/edulearn/edulearn-demo/images/slider/home1/slide3.jpg");
+}
+.main-top-slider-text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.main-top-slider-text h2{
+  color:  white;
+  font-size: 60px;
+}
+.main-top-slider-text p{
+  font-size: 20px;
+  max-width: 700px;
+  font-weight: 700;
+}
+.slider-btn-container{
+  display: flex;
+  gap: 20px;
+}
+.read-more-btn{
+  background-color: black;
+  color:white;
+  padding: 12px 25px;
+  border: none;
+}
+.get-started-button{
+  background-color: #ff3115;
+  color: white;
+  border:none;
+  padding: 12px 25px;
+
+}
+.course-item{
+      min-height: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.swiper-slide .course-item{
+  text-align: start;
+}
+.course-item {
+  transition: .5s;
+}
+.swiper-slide .course-item img{
+  transition: .5s;
+  filter: brightness(80%);
+}
+.swiper-slide .course-body{
+padding: 10px 20px;
+display: flex
+}
+.swiper-slide .course-desc{
+  display: flex;
+  min-height: 180px ;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.course-desc p {
+  font-size: 16px;
+}
+.swiper-slide .course-footer{
+  padding: 15px 20px;
+    background-color: #f0f0f0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+}
+.swiper-slide .course-title a{
+  color: black;
+  }
+  .swiper-slide .course-title p{
+    color: #505050;
+    font-size: 16px;
+    }
+.course-img{
+  position: relative;
+}
+.course-toolbar{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.course-toolbar a{
+  color: white;
+}
+.swiper-slide .course-item:hover img{
+  filter: brightness(60%);
+}
+.swiper-slide .course-footer a{
+  color: #505050;
+}
+.swiper-slide .course-footer a::after{
+  font-family: fontAwesome;
+  content: "\f101";
+  position: absolute;
+  right: 10px;
+}
+
+.swiper-slide .course-footer a:hover{
+  color: #ffaa30;
 }

@@ -84,6 +84,7 @@ export const az_lang = {
     },
     future:"Gələcək Sahəniz",
     areas:"Sahələr",
+    applyBtn:"Müraciət ET",
     courseCard:[
         {
             img:'./images2/biznes.png',
@@ -137,6 +138,45 @@ export const en_lang={
         "Students",
         "Campus Addresses",
         "Registration"
+    ],
+    applyBtn:"Apply",
+    courseCard:[
+        {
+            img:'./images2/biznes.png',
+            title: 'Business & Economics',
+            desc: 'The Business and Economics Faculty offers high-level academic education, combining accounting, finance, marketing, strategic management, and economics specializations.',
+            details:"International Diploma and Admission Guarantee"
+        },
+        {
+            img:'./images2/it-and-comp-2.png',
+            title: 'Computer & IT',
+            desc: 'Here, you will learn to use computers. You will study programming, design of large systems, and technological architecture in this field.',
+            details:"International Diploma and Admission Guarantee"
+        },
+        {
+            img:'./images2/enginering.png',
+            title: 'Engineering',
+            desc: 'Applying mathematical and scientific knowledge to invent, design, and develop machines, tools, systems, components, materials, and processes. With our motivation classes, you can become an engineer of the future.',
+            details:"International Diploma and Admission Guarantee"
+        },
+        {
+            img:'./images2/tib.png',
+            title: 'Medicine',
+            desc: 'The colleges medical program prepares students for university medical programs, including medicine, dentistry, physician assistant programs, pharmacy, optometry, and prepares students for all medical exams.',
+            details:"International Diploma and Admission Guarantee"
+        },
+        {
+            img:'./images2/politik.png',
+            title: 'International Relations',
+            desc: 'Social sciences, in a broad sense, study how society and individuals behave and influence the world. It encompasses areas such as governments and politicians, local authorities, parties, and NGOs.',
+            details:"International Diploma and Admission Guarantee"
+        },
+        {
+            img:'./images2/dizayn.png',
+            title: 'Design & Fine Arts',
+            desc: 'Art is a creative activity that expresses either artistic or technical ability. It produces a product or object. Visual art, creating works, and expressing the artists imaginative mind is a different type of activity.',
+            details:"International Diploma and Admission Guarantee"
+        },
     ],
     servicesDiplom:"Diploma",
     servicesStudents:"Students",
