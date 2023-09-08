@@ -14,9 +14,22 @@ function CoursesSlideContainer() {
     }}
     loop={true}
     grabCursor={true}
-    slidesPerView={3}
-    spaceBetween={30}
-
+    // slidesPerView={3}
+    // spaceBetween={30}
+    breakpoints={{
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView:2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    }}
     className="mySwiper "
     >
        {

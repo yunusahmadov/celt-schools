@@ -589,7 +589,7 @@ ul {
   background-position: center top;
 }
 .bg3 {
-  background-image: url(images/bg/counter-bg.jpg);
+  background-image: url(images2/counter-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -9269,6 +9269,7 @@ justify-content: space-between;
 }
 .swiper-slide .course-item{
   text-align: start;
+  /* justify-content: baseline; */
 }
 .course-item {
   transition: .5s;
@@ -9336,4 +9337,9 @@ display: flex
 
 .swiper-slide .course-footer a:hover{
   color: #ffaa30;
+}
+.swiper-slide .course-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
