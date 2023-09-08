@@ -8,6 +8,8 @@ import Services from './Services';
 import MainTopSlider from './MainTopSlider';
 import Upcoming from './Upcoming';
 import CoursesSlideContainer from './CoursesSlideContainer';
+import CountUp from './CountUpSection';
+import CountUpSection from './CountUpSection';
 
 function MainPage() {
 
@@ -119,53 +121,7 @@ function MainPage() {
     {/* <!-- Courses End --> */}
     
     {/* <!-- Counter Up Section Start--> */}
-    <div className="rs-counter pt-100 pb-70 bg3">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6 col-md-12">
-                    <div className="counter-content">
-                        <h2 className="counter-title">ACHEIVEMENTS</h2>
-                        <div className="counter-text">
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart like mine.</p>
-                        </div>
-                        <div className="counter-img rs-image-effect-shine">
-                            <img src="images/counter/1.jpg" alt="Counter Discussion"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-6 col-md-12 mt-80">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="rs-counter-list">
-                                <h2 className="counter-number plus">60</h2>                  
-                                <h4 className="counter-desc">TEACHERS</h4>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="rs-counter-list">
-                                <h2 className="counter-number plus">40</h2>
-                                <h4 className="counter-desc">COURSES</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="rs-counter-list">
-                                <h2 className="counter-number plus">900</h2>                  
-                                <h4 className="counter-desc">STUDENTS</h4>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="rs-counter-list">
-                                <h2 className="counter-number plus">3675</h2>
-                                <h4 className="counter-desc">Satisfied Client</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <CountUpSection/>
     {/* <!-- Counter Down Section End --> */}
 
     {/* <!-- Events Start --> */}
