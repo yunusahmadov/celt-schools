@@ -5,6 +5,9 @@ import Toolbar from '../../components/Toolbar';
 import Header from './Header';
 import Footer from '../Courses/Footer';
 import Services from './Services';
+import MainTopSlider from './MainTopSlider';
+import Upcoming from './Upcoming';
+import CoursesSlideContainer from './CoursesSlideContainer';
 
 function MainPage() {
 
@@ -29,61 +32,7 @@ function MainPage() {
     {/* <!--Full width header End--> */}
     
     {/* <!-- Slider Area Start --> */}
-    <div id="rs-slider" class="slider-overlay-2" style={{height:"50vh"}}>     
-        	<div id="home-slider" class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="0" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="false" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
-				{/* <!-- Item 1 --> */}
-				<div class="item active">
-					<img src="images/slider/home1/slide1.jpg" alt="Slide1" />
-					<div class="slide-content">
-						<div class="display-table">
-							<div class="display-table-cell">
-								<div class="container text-center">
-									<h1 class="slider-title" data-animation-in="fadeInLeft" data-animation-out="animate-out">WELCOME TO EDULEARN</h1>
-									<p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br class="hidden-sm-dow"/> Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor.</p>  
-									<a href="#" class="sl-readmore-btn mr-30" data-animation-in="lightSpeedIn" data-animation-out="animate-out">READ MORE</a>
-									<a href="#" class="sl-get-started-btn" data-animation-in="lightSpeedIn" data-animation-out="animate-out">GET STARTED NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				{/* <!-- Item 2 --> */}
-				<div class="item">
-					<img src="images/slider/home1/slide2.jpg" alt="Slide2" />
-					<div class="slide-content">
-						<div class="display-table">
-							<div class="display-table-cell">
-								<div class="container text-center">
-									<h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">ARE YOU READY TO APPLY?</h1>
-									<p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br class="hidden-sm-dow"/> Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor.</p>  
-									<a href="#" class="sl-readmore-btn mr-30" data-animation-in="fadeInUp" data-animation-out="animate-out">READ MORE</a>
-									<a href="#" class="sl-get-started-btn" data-animation-in="fadeInUp" data-animation-out="animate-out">GET STARTED NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				{/* <!-- Item 3 --> */}
-				<div class="item">
-					<img src="images/slider/home1/slide3.jpg" alt="Slide3" />
-					<div class="slide-content">
-						<div class="display-table">
-							<div class="display-table-cell">
-								<div class="container text-center">
-									<h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">ARE YOU READY TO APPLY?</h1>
-									<p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br/> Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor.</p>  
-									<a href="#" class="sl-readmore-btn mr-30" data-animation-in="fadeInUp" data-animation-out="animate-out">READ MORE</a>
-									<a href="#" class="sl-get-started-btn" data-animation-in="fadeInUp" data-animation-out="animate-out">GET STARTED NOW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-        	</div>         
-        </div>
+    <MainTopSlider/>
     {/* <!-- Slider Area End --> */}
     
     {/* <!-- Services Start --> */}
@@ -162,140 +111,8 @@ function MainPage() {
                 <h2>OUR POPULAR COURSES</h2>      
                 <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
             </div>
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
-                        <div className="cource-item">
-                            <div className="cource-img">
-                                <img src="images/courses/1.jpg" alt="" />
-                                <a className="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                                <span className="course-value">$450</span>
-                            </div>
-                            <div className="course-body">
-                                <a href="#" className="course-category">Science</a>
-                                <h4 className="course-title"><a href="courses-details.html">Electrical Engineering</a></h4>
-                                <div className="review-wrap">
-                                    <ul className="rating">
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span className="review">25 Reviews</span>
-                                </div>
-                                <div className="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="course-footer">
-                                <div className="course-time">
-                                    <span className="label">Course Time</span>
-                                    <span className="desc">3 Year</span>
-                                </div>
-                                <div className="course-student">
-                                    <span className="label">Course Student</span>
-                                    <span className="desc">95</span>
-                                </div>
-                                <div className="class-duration">
-                                    <span className="label">Class Duration</span>
-                                    <span className="desc">8:30-4:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="cource-item">
-                            <div className="cource-img">
-                                <img src="images/courses/2.jpg" alt="" />
-                                <a className="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                                <span className="course-value">$450</span>
-                            </div>
-                            <div className="course-body">
-                                <a href="#" className="course-category">Science</a>
-                                <h4 className="course-title"><a href="courses-details.html">Computer Engineering</a></h4>
-                                <div className="review-wrap">
-                                    <ul className="rating">
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span className="review">39 Reviews</span>
-                                </div>
-                                <div className="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="course-footer">
-                                <div className="course-time">
-                                    <span className="label">Course Time</span>
-                                    <span className="desc">4 Years</span>
-                                </div>
-                                <div className="course-student">
-                                    <span className="label">Course Student</span>
-                                    <span className="desc">99</span>
-                                </div>
-                                <div className="class-duration">
-                                    <span className="label">Class Duration</span>
-                                    <span className="desc">8:30-4:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="cource-item">
-                            <div className="cource-img">
-                                <img src="images/courses/3.jpg" alt="" />
-                                <a className="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                                <span className="course-value">$450</span>
-                            </div>
-                            <div className="course-body">
-                                <a href="#" className="course-category">Science</a>
-                                <h4 className="course-title"><a href="courses-details.html">Civil Engineering</a></h4>
-                                <div className="review-wrap">
-                                    <ul className="rating">
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star"></li>
-                                        <li className="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span className="review">22 Reviews</span>
-                                </div>
-                                <div className="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="course-footer">
-                                <div className="course-time">
-                                    <span className="label">Course Time</span>
-                                    <span className="desc">3.5 Years</span>
-                                </div>
-                                <div className="course-student">
-                                    <span className="label">Course Student</span>
-                                    <span className="desc">80</span>
-                                </div>
-                                <div className="class-duration">
-                                    <span className="label">Class Duration</span>
-                                    <span className="desc">8:30-4:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="row" >
+                    <CoursesSlideContainer/>
             </div>
         </div>
     </div>
@@ -359,93 +176,8 @@ function MainPage() {
                 <p>I feel the presence of the Almighty, who formed us in his own image, and the breath.</p>
             </div>
             <div className="row">
-                <div className="col-md-12">
-                    <div className="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
-                        <div className="event-item">
-                            <div className="event-img">
-                                <img src="images/events/1.jpg" alt="" />
-                                <a className="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div className="events-details sec-color">
-                                <div className="event-date">
-                                    <i className="fa fa-calendar"></i>
-                                    <span>28 June 2017</span>
-                                </div>
-                                <h4 className="event-title"><a href="events-details.html">PRACTICE WORKSHOP 2018</a></h4>
-                                <div className="event-meta">
-                                    <div className="event-time">
-                                        <i className="fa fa-clock-o"></i>
-                                        <span>12.30AM-05.30PM</span>
-                                    </div>
-                                    <div className="event-location">
-                                        <i className="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div className="event-btn">
-                                    <a href="#">Join Event <i className="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-item">
-                            <div className="event-img">
-                                <img src="images/events/2.jpg" alt="" />
-                                <a className="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div className="events-details sec-color">
-                                <div className="event-date">
-                                    <i className="fa fa-calendar"></i>
-                                    <span>28 April 2017</span>
-                                </div>
-                                <h4 className="event-title"><a href="events-details.html">CAMPUS EXAMINATION ROOM</a></h4>
-                                <div className="event-meta">
-                                    <div className="event-time">
-                                        <i className="fa fa-clock-o"></i>
-                                        <span>10.30AM-03.30PM</span>
-                                    </div>
-                                    <div className="event-location">
-                                        <i className="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div className="event-btn">
-                                    <a href="#">Join Event <i className="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="event-item">
-                            <div className="event-img">
-                                <img src="images/events/3.jpg" alt="" />
-                                <a className="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i className="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div className="events-details sec-color">
-                                <div className="event-date">
-                                    <i className="fa fa-calendar"></i>
-                                    <span>28 June 2017</span>
-                                </div>
-                                <h4 className="event-title"><a href="events-details.html">BEST GRADUATION CEREMONY</a></h4>
-                                <div className="event-meta">
-                                    <div className="event-time">
-                                        <i className="fa fa-clock-o"></i>
-                                        <span>10.30AM-03.30PM</span>
-                                    </div>
-                                    <div className="event-location">
-                                        <i className="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div className="event-btn">
-                                    <a href="#">Join Event <i className="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="col-md-12 ">
+                    <Upcoming/>
                 </div>
             </div>
         </div>

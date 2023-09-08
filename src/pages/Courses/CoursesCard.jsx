@@ -1,8 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function CoursesCard({courseImage,courseValue,courseCategory,courseDate,courseDuration,courseDetails,courseDescription}) {
+    const language=useSelector((state)=>state.language.value)
+
   return (
-    <div class="col-lg-4 col-md-6 grid-item ">
     <div class="course-item">
         <div class="course-img">
         <img src={courseImage} alt="" />
@@ -30,11 +32,11 @@ function CoursesCard({courseImage,courseValue,courseCategory,courseDate,courseDu
                 {/* <i class="fa fa-users"></i> 70 SEATS */}
             </div>
             <div class="course-button">
-                <a href="#">Müraciət ET</a>
+                <a href="#">{language.applyBtn}</a>
             </div>
         </div>
     </div>						
-</div>
+// </div>
   )
 }
 
