@@ -11,7 +11,7 @@ function MainMenu() {
 
   // console.log(menuOpened);
   console.log(bottomMenuOPened);
-
+  const hrefs = ["HOME", "A LEVEL DIPLOMA", "ADMISSION", "FIELDS", "SUMMER CAMP", "STUDENTS", "/contacts", "REGISTRATION"];
 
   return (
     <div>
@@ -34,7 +34,7 @@ function MainMenu() {
                           i === 0 ? "first-item" : ""
                         }`}
                       >
-                        <a href="" style={{ color: i === 0 ? "red" : "white" }}>
+                        <a href={hrefs[i]} style={{ color: i === 0 ? "red" : "white" }}>
                           {item}
                         </a>
                       </li>

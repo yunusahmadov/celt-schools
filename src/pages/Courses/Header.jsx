@@ -1,9 +1,12 @@
 import React from 'react'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { openBottomMenu } from "../../features/MenuSlice/menuSlice";
 
 function Header() {
   const language=useSelector((state)=>state.language.value)
-
+  const bottomMenuOPened = useSelector((state) => state.menuOpened.menuBottom);
+  const dispatch=useDispatch();
+  console.log(bottomMenuOPened);
   return (
     <header id="rs-header-2" className="rs-header-2">
     {/* <!-- Menu Start --> */}
@@ -19,11 +22,11 @@ function Header() {
           </div>
           <div className="col-lg-9 col-md-12 relative">
             <div className="main-menu">
-              <a className="rs-menu-toggle">
+              <a className="rs-menu-toggle another-a" onClick={() => dispatch(openBottomMenu())}>
                 <i className="fa fa-bars"></i>Menu
               </a>
-              <nav className="rs-menu">
-                <ul className="nav-menu">
+              <nav className="rs-menu" >
+                <ul className="nav-menu" style={bottomMenuOPened?{height:"500px",opacity:1}:{height:"0px",opacity:0}}>
                 {
                         language.nav.map((item, i) => (
                          <li className="menu-item-has-children" key={i}>

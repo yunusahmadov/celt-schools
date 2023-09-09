@@ -1231,6 +1231,7 @@ ul {
 }
 .rs-header-2 .menu-area .rs-menu .nav-menu {
   text-align: right;
+  transition: 1s;
 }
 .rs-header-2 .menu-area .rs-menu .nav-menu > li > a {
   color: #ffffff;

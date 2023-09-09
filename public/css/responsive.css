@@ -576,6 +576,11 @@
     .rs-menu-toggle{
         display: inline-block;
     }
+    .another-a{
+        display: block;
+        width: 100px;
+        margin-left: auto;
+    }
 }
 
 /* Min Width: 991px. */
