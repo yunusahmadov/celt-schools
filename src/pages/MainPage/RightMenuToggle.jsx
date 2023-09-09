@@ -14,7 +14,7 @@ function RightMenuToggle() {
         </span>
       </div>
       <div className="canvas-logo">
-        <a href="index.html">
+        <a href="/">
           <img src="images/logo-white.png" alt="logo" />
         </a>
       </div>

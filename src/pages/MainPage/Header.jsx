@@ -25,7 +25,7 @@ function Header() {
                         </div>
                         <div className="col-md-4 col-sm-12">
                             <div className="logo-area text-center">
-                                <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+                                <a href="/"><img src="images/logo.png" alt="logo"/></a>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-12">

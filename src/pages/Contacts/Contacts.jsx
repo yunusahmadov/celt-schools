@@ -1,12 +1,12 @@
 import React from "react";
 import Toolbar from "../../components/Toolbar";
-import Header from "../MainPage/Header";
 import Preloader from "../../components/Preloader";
-import Footer from "../Courses/Footer";
+import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ContactsCard from "./ContactsCard";
 import ContactsHeader from "./ContactsHeader";
 import ContactsSection from "./ContactsSection";
+import Header from "../Courses/Header";
 
 function Contacts() {
   return (
@@ -20,7 +20,7 @@ function Contacts() {
         {/* <!-- Toolbar End --> */}
 
         {/* <!--Header Start--> */}
-        <ContactsHeader />
+        <Header/>
         {/* <!--Header End--> */}
       </div>
       {/* <!--Full width header End--> */}

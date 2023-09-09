@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import OurCourses from "./OurCourses";
 import PartnerCarousel from "./PartnerCarousel";
-import Footer from "./Footer";
+import Footer from "../../components/Footer";
 
 function Courses() {
   const language=useSelector((state)=>state.language.value)

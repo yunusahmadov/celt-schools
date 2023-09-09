@@ -1,18 +1,21 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { openMenu } from "../../features/MenuSlice/menuSlice";
+import { openBottomMenu, openMenu } from "../../features/MenuSlice/menuSlice";
 
 function MainMenu() {
   const language = useSelector((state) => state.language.value);
   const menuOpened = useSelector((state) => state.menuOpened.value);
+  const bottomMenuOPened = useSelector((state) => state.menuOpened.menuBottom);
+
   const dispatch=useDispatch();
 
-  console.log(menuOpened);
-
+  // console.log(menuOpened);
+  console.log(bottomMenuOPened);
+  const hrefs = ["HOME", "A LEVEL DIPLOMA", "ADMISSION", "FIELDS", "SUMMER CAMP", "STUDENTS", "/contacts", "REGISTRATION"];
 
   return (
     <div>
-      <div className="menu-area menu-sticky">
+      <div className="menu-area menu-sticky" style={bottomMenuOPened?{height:"500px"}:{height:"50px"}}>
         <div className="container">
           <div className="main-menu">
             <div className="row relative">
@@ -20,18 +23,18 @@ function MainMenu() {
                 {/* <!-- <div id="logo-sticky" className="text-center">
                                     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
                                 </div> --> */}
-                <a className="rs-menu-toggle">
-                  <i className="fa fa-bars"></i>Menu
+                <a className="rs-menu-toggle" onClick={() => dispatch(openBottomMenu())}>
+                  <i className="fa fa-bars" ></i>Menu
                 </a>
                 <nav className="rs-menu">
                   <ul className="nav-menu">
                     {language.nav.map((item, i) => (
-                      <li
+                      <li key={i}
                         className={`menu-item-has-children ${
                           i === 0 ? "first-item" : ""
                         }`}
                       >
-                        <a href="" style={{ color: i === 0 ? "red" : "white" }}>
+                        <a href={hrefs[i]} style={{ color: i === 0 ? "red" : "white" }}>
                           {item}
                         </a>
                       </li>

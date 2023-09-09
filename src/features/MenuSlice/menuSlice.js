@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
-    value:false
+    value:false,
+    menuBottom:false
 }
 export const menuSlice=createSlice({
     name:"menuOpened",
@@ -9,10 +10,13 @@ export const menuSlice=createSlice({
     reducers:{
         openMenu:(state)=>{
             state.value=!state.value
+        },
+        openBottomMenu:(state)=>{
+            state.menuBottom=!state.menuBottom
         }
     }
 })
 
-export const {openMenu}=menuSlice.actions;
+export const {openMenu,openBottomMenu}=menuSlice.actions;
 
 export default menuSlice.reducer
