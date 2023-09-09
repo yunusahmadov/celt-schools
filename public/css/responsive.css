@@ -480,10 +480,7 @@
     .rs-about .about-img img{
         width: 100%;
     }
-    .rs-menu-toggle {
-        padding-left: 0;
-        padding-right: 0;
-    }
+
     .home1 .searce-box {
         right: 15px;
     }
@@ -575,6 +572,9 @@
     }
     .contact-page-section .contact-address-section .contact-info p {
         font-size: 15px;
+    }
+    .rs-menu-toggle{
+        display: inline-block;
     }
 }
 

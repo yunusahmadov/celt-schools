@@ -3,7 +3,7 @@ import { az_lang } from '../../language/language';
 import Preloader from '../../components/Preloader';
 import Toolbar from '../../components/Toolbar';
 import Header from './Header';
-import Footer from '../Courses/Footer';
+import Footer from '../../components/Footer';
 import Services from './Services';
 import MainTopSlider from './MainTopSlider';
 import Upcoming from './Upcoming';

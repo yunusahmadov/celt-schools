@@ -602,7 +602,7 @@ ul {
   height: 35vh;
 }
 .bg4 {
-  background-image: url(images/bg/cta-bg.jpg);
+  background-image: url(images2/cta-bg.jpgx);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -621,6 +621,12 @@ ul {
 }
 .header-bg7{
   background-image: url(images2/courses/bg-04-free-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-position: 50% 20%;
+}
+.header-bg8{
+  background-image: url(images2/bg3.jpg);
   background-size: cover;
   background-position: center;
   background-position: 50% 20%;
@@ -9204,7 +9210,12 @@ justify-content: space-between;
   width: 5px !important;
   height: 30px !important;
   border-radius: 0 !important;
+  background-color: white !important;
+
+}
+.swiper-pagination-bullet-active{
   background-color: #fc7f0c !important;
+
 }
 .main-top-slider-container{
   width: 100%;
@@ -9348,4 +9359,7 @@ display: flex
 }
 .sidebarnav_menu.main-menu li.menu-item-has-children:before{
 display: none;
+}
+.menu-area{
+  transition: 1s;
 }

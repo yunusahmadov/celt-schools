@@ -12,7 +12,7 @@ function Header() {
         <div className="row rs-vertical-middle">
           <div className="col-lg-3 col-md-12">
             <div className="logo-area">
-              <a href="index.html">
+              <a href="/">
                 <img src="images/logo-white.png" alt="logo" />
               </a>
             </div>
@@ -26,7 +26,7 @@ function Header() {
                 <ul className="nav-menu">
                 {
                         language.nav.map((item, i) => (
-                         <li className="menu-item-has-children">
+                         <li className="menu-item-has-children" key={i}>
                            <a href=""> {item} </a>
                          </li>
                         ))

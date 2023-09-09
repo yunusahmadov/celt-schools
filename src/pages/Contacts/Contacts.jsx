@@ -2,7 +2,7 @@ import React from "react";
 import Toolbar from "../../components/Toolbar";
 import Header from "../MainPage/Header";
 import Preloader from "../../components/Preloader";
-import Footer from "../Courses/Footer";
+import Footer from "../../components/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ContactsCard from "./ContactsCard";
 import ContactsHeader from "./ContactsHeader";
