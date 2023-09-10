@@ -1,2 +1,2 @@
-Celt Schools Project
+Celt Schools Multipage Project
 
