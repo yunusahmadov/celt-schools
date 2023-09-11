@@ -26,7 +26,7 @@ function CoursSlideElem({courseImage,courseValue,courseCategory,courseDate,cours
             {/* <i class="fa fa-users"></i> 70 SEATS */}
         </div>
         <div class="course-button">
-            <a href="#">{language.applyBtn}</a>
+            <a href="/contacts">{language.applyBtn}</a>
         </div>
     </div>
 </div>	

@@ -357,8 +357,8 @@
         margin-top: 6px;
     }
     .inner-page .searce-box{
-        right: 85px;
-        top: 16px;
+        right: 90px;
+    top: 13px;
     }
     .rs-transfarent-header-style .rs-menu-toggle,
     .instructor-home .rs-menu-toggle,
@@ -374,7 +374,7 @@
     .home5 .logo-area{
         position: absolute;
         z-index: 11;
-        top: 10px;
+        top: 35px;
         width: auto;
     }
     .rs-counter-style8 .rs-counter-list .icon-part,
@@ -1041,7 +1041,7 @@
     .instructor-home .logo-area,
     .home3 .logo-area,
     .home5 .logo-area{
-        top: 15px;
+        top: 28px;
     }
     .slick-prev {
         left: -20px;

@@ -31,17 +31,6 @@ const language=useSelector((state)=>state.language.value)
       })
     }
       </div>
-      {/* <nav aria-label="Page navigation example">
-            <ul className="pagination">
-                <li className="page-item disabled"><a className="page-link fa fa-angle-left" href="#" tabindex="-1"></a></li>
-                <li className="page-item"><a className="page-link active" href="#">1</a></li>
-                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                <li className="page-item"><a className="page-link dotted" href="#">...</a></li>
-                <li className="page-item"><a className="page-link" href="#">5</a></li>
-                <li className="page-item"><a className="page-link" href="#">6</a></li>
-                <li className="page-item"><a className="page-link fa fa-angle-right" href="#"></a></li>
-            </ul>
-        </nav> */}
     </div>
   </div>
   )

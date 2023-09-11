@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { openBottomMenu } from "../../features/MenuSlice/menuSlice";
 
@@ -7,6 +7,24 @@ function Header() {
   const bottomMenuOPened = useSelector((state) => state.menuOpened.menuBottom);
   const dispatch=useDispatch();
   console.log(bottomMenuOPened);
+    // Состояние для отслеживания ширины экрана
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    // Обработчик изменения размера окна
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      // Добавляем слушателя события изменения размера окна
+      window.addEventListener('resize', handleResize);
+  
+      // Удаляем слушателя при размонтировании компонента
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
   return (
     <header id="rs-header-2" className="rs-header-2">
     {/* <!-- Menu Start --> */}
@@ -24,9 +42,10 @@ function Header() {
             <div className="main-menu">
               <a className="rs-menu-toggle another-a" onClick={() => dispatch(openBottomMenu())}>
                 <i className="fa fa-bars"></i>Menu
+                
               </a>
               <nav className="rs-menu" >
-                <ul className="nav-menu" style={bottomMenuOPened?{height:"500px",opacity:1}:{height:"0px",opacity:0}}>
+              <ul className="nav-menu" style={bottomMenuOPened ? { height: "450px", opacity: 1,visibility:'visible' } : { height: "0px", opacity: windowWidth >= 991 ? 1 : 0,visibility:windowWidth >= 991 ? 'visible' : 'hidden' }}>
                 {
                         language.nav.map((item, i) => (
                          <li className="menu-item-has-children" key={i}>
