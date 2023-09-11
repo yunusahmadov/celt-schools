@@ -608,7 +608,7 @@ ul {
   background-position: center top;
 }
 .bg5 {
-  background-image: url(images/bg/testimonial-bg.jpg);
+  background-image: url(images2/testimonial-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -9363,4 +9363,8 @@ display: none;
 }
 .menu-area{
   transition: 1s;
+}
+.inner-page .logo-area{
+  position: absolute;
+  top :0px;
 }
