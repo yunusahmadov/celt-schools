@@ -20,35 +20,35 @@ function RightMenuToggle() {
       </div>
       <ul className="sidebarnav_menu list-unstyled main-menu">
         <li className="current-menu-item menu-item-has-children">
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
-
+{/* 
         <li className="menu-item-has-children">
           <a href="#">About Us</a>
         </li>
 
         <li className="menu-item-has-children">
           <a href="#">Pages</a>
+        </li> */}
+
+        <li className="menu-item-has-children">
+          <a href="/courses">Courses</a>
         </li>
 
         <li className="menu-item-has-children">
-          <a href="#">Courses</a>
-        </li>
-
-        <li className="menu-item-has-children">
-          <a href="#">Events</a>
+          <a href="/events">Events</a>
         </li>
 
         <li className="menu-item-has-children">
           <a href="#">Blog</a>
         </li>
         <li>
-          <a href="contact.html">
+          <a href="/contacts">
             Contact<span className="icon"></span>
           </a>
         </li>
       </ul>
-      <div className="search-wrap">
+      {/* <div className="search-wrap">
         <label className="screen-reader-text">Search for:</label>
         <input
           type="search"
@@ -60,7 +60,7 @@ function RightMenuToggle() {
         <button type="submit" value="Search">
           <i className="fa fa-search"></i>
         </button>
-      </div>
+      </div> */}
     </nav>
   );
 }

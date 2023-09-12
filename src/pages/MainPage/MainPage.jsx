@@ -40,7 +40,7 @@ function MainPage() {
     {/* <!-- Services End --> */}
 
     {/* <!-- About Us Start --> */}
-    <div id="rs-about" className="rs-about sec-spacer">
+    {/* <div id="rs-about" className="rs-about sec-spacer">
         <div className="container">
             <div className="sec-title mb-50 text-center">
                 <h2>ABOUT US</h2>      
@@ -101,7 +101,7 @@ function MainPage() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     {/* <!-- About Us End --> */}
 
     {/* <!-- Courses Start --> */}

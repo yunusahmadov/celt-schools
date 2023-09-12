@@ -60,14 +60,14 @@ function MainMenu() {
                   </ul>
                 </nav>
                 <div className="right-bar-icon rs-offcanvas-link text-right">
-                  <a
+                  {/* <a
                     className="hidden-xs rs-search"
                     data-target=".search-modal"
                     data-toggle="modal"
                     href="#"
                   >
                     <i className="fa fa-search"></i>
-                  </a>
+                  </a> */}
 
                   <a id="nav-expander" className="nav-expander fixed" onClick={() => dispatch(openMenu())} >
                     <i className="fa fa-bars fa-lg white"></i>
