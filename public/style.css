@@ -9368,3 +9368,9 @@ display: none;
   position: absolute;
   top :0px;
 }
+.nav-menu{
+  transition: .2s;
+}
+.book_preload{
+  transition: .5s;
+}

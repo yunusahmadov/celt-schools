@@ -691,7 +691,7 @@ Version: 1.0.0
 		/* padding: 14.5px; */
 		display: block;
 		width: 90px;
-		margin-left: auto;
+		/* margin-left: auto; */
 		background: #222;
 		border-left: 1px solid #222;
 		position: relative;
@@ -699,8 +699,8 @@ Version: 1.0.0
 		color: #eee;
 		font-size: 15px;
 		text-transform: uppercase;
-		margin-top: 15px;
-		width: 60px !important;
+		margin-top: 18px;
+		width: 65px !important;
 		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 	

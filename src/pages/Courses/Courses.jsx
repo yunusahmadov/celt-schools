@@ -4,24 +4,35 @@ import { az_lang } from "../../language/language";
 import { imagesArr } from "../../imagesArr";
 import Preloader from "../../components/Preloader";
 import Toolbar from "../../components/Toolbar";
-import Header from "./Header";
 import { useSelector } from "react-redux";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import OurCourses from "./OurCourses";
 import PartnerCarousel from "./PartnerCarousel";
 import Footer from "../../components/Footer";
+import Header from "../MainPage/Header";
+import RightMenuToggle from "../MainPage/RightMenuToggle";
 
 function Courses() {
   const language=useSelector((state)=>state.language.value)
 
   console.log(language);
   return (
-    <body className="inner-page">
+    // <body className="inner-page">
+    <body className="home1">
+    {/* <!--Preloader area start here--> */}
     {/* <Preloader/> */}
-      <div className="full-width-header">
-        <Toolbar/>
-      <Header/>
-      </div>
+    {/* <!--Preloader area end here-->
+    
+    <!--Full width header Start--> */}
+    <div className="full-width-header">
+
+           {/* <!--Header Start--> */}
+          <Header/>
+        {/* <!--Header End--> */}
+
+    </div>
+    <RightMenuToggle/>
+     
       <Breadcrumbs
     pageName={"Our Courses"}
     />
@@ -29,9 +40,6 @@ function Courses() {
       <OurCourses/>
       {/* <!-- Courses End --> */}
 
-      {/* <!-- Partner Start --> */}
-      <PartnerCarousel/>
-      {/* <!-- Partner End --> */}
 
       {/* <!-- Footer Start --> */}
       <Footer/>

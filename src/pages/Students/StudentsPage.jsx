@@ -2,20 +2,22 @@ import React from 'react'
 import Footer from '../../components/Footer'
 import Breadcrumbs from '../Events/EventBread'
 import Toolbar from '../../components/Toolbar'
-import Header from '../Courses/Header'
 import StudentsBreadcrumbs from './StudentsBreadcrumbs'
+import Header from '../MainPage/Header'
+import RightMenuToggle from '../MainPage/RightMenuToggle'
+import Preloader from '../../components/Preloader'
 
 function StudentsPage() {
   return (
-    <body class="inner-page">
-    {/* <Preloader/> */}
+    <body class="home1">
+    <Preloader/>
       <div className="full-width-header">
-        <Toolbar/>
-      <Header/>
+		<Header/>
       </div>
       <StudentsBreadcrumbs
     pageName={"Our Graduates"}
     />
+	<RightMenuToggle/>
     {/* <!--Full width header End--> */}
 
     <div id="rs-team-2" class="rs-team-2 team-all pt-100 pb-70">

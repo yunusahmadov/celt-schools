@@ -6,25 +6,25 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import ContactsCard from "./ContactsCard";
 import ContactsHeader from "./ContactsHeader";
 import ContactsSection from "./ContactsSection";
-import Header from "../Courses/Header";
+import Header from "../MainPage/Header";
+import RightMenuToggle from "../MainPage/RightMenuToggle";
 
 function Contacts() {
   return (
-    <body class="inner-page">
+    <body class="home1">
       {/* <Preloader/> */}
 
       {/* <!--Full width header Start--> */}
       <div class="full-width-header">
         {/* <!-- Toolbar Start --> */}
-        <Toolbar />
         {/* <!-- Toolbar End --> */}
 
         {/* <!--Header Start--> */}
         <Header/>
         {/* <!--Header End--> */}
       </div>
-      {/* <!--Full width header End--> */}
-
+      {/* <!--Full width header End--> */}  
+      <RightMenuToggle/>
       {/* <!-- Breadcrumbs Start --> */}
       <Breadcrumbs pageName={"Contact"} />
       {/* <!-- Breadcrumbs End --> */}
