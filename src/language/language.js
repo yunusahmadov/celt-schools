@@ -12,6 +12,18 @@ export const az_lang = {
         "Kampus  Ünvanları",
         "Qeydiyyat"
     ],
+    //Courses Slide on MainPage
+    popularCourses:"POPULAR KURSLARIMIZ",
+    //ACHEIVEMENTS on Main Page
+    acheivementsTitle:'NAİLİYYƏTLƏRİMİZ',   
+    achTeacher:"MÜƏLLİMLƏR",
+    achCourses:"KURSLAR",
+    achStudents:"TƏLƏBƏLƏR",
+    achClient:"MƏMNUN MÜŞTƏRİ",
+    //UPCOMING EVENTS on MainPage
+    upcomingEventsTitle:"GƏLƏCƏK TƏDBİRLƏRİMİZ",
+
+
     servicesTrend:"Trend kurslar",
     servicesDiplom:"Diplom",
     servicesStudents:"Tələbələrimiz",
@@ -139,6 +151,21 @@ export const en_lang={
         "Campus Addresses",
         "Registration"
     ],
+
+    //Courses Slide on MainPage
+    popularCourses: "OUR POPULAR COURSES",
+    //ACHEIVEMENTS on Main Page
+    acheivementsTitle: 'ACHEIVEMENTS',   
+    achTeacher:"TEACHERS",
+    achCourses:"COURSES",
+    achStudents:"STUDENTS",
+    achClient:"SATISFIED CLIENT",
+    //UPCOMING EVENTS on MainPage
+    upcomingEventsTitle: "OUR UPCOMING EVENTS",
+
+
+
+
     applyBtn:"Apply",
     courseCard:[
         {

@@ -7,11 +7,13 @@ import Contacts from './pages/Contacts/Contacts'
 import EventsPage from './pages/Events/EventsPage'
 import ErrorPage from './components/ErrorPage'
 import StudentsPage from './pages/Students/StudentsPage'
+import ScrollToTopButton from './components/ScrollToTop'
 
 function App() {
   return (
   <>
    <BrowserRouter>
+   <ScrollToTopButton />
    <Routes>
   <Route element={<MainPage />} path='/'/>
   <Route element={<Courses />} path='/courses'/>
