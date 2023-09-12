@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { openBottomMenu, openMenu } from "../../features/MenuSlice/menuSlice";
 
@@ -8,6 +8,24 @@ function MainMenu() {
   const bottomMenuOPened = useSelector((state) => state.menuOpened.menuBottom);
 
   const dispatch=useDispatch();
+
+      // Состояние для отслеживания ширины экрана
+      const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+      // Обработчик изменения размера окна
+      useEffect(() => {
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        // Добавляем слушателя события изменения размера окна
+        window.addEventListener('resize', handleResize);
+    
+        // Удаляем слушателя при размонтировании компонента
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
   // console.log(menuOpened);
   console.log(bottomMenuOPened);
@@ -27,9 +45,9 @@ function MainMenu() {
                   <i className="fa fa-bars" ></i>Menu
                 </a>
                 <nav className="rs-menu">
-                  <ul className="nav-menu">
+                  <ul className="nav-menu" style={bottomMenuOPened?{visibility:'visible'}:{visibility:windowWidth >= 991 ? 'visible' : 'hidden'}}>
                     {language.nav.map((item, i) => (
-                      <li key={i}
+                      <li key={i} 
                         className={`menu-item-has-children ${
                           i === 0 ? "first-item" : ""
                         }`}

@@ -1,17 +1,18 @@
 import React from 'react'
 import Toolbar from '../../components/Toolbar'
-import Header from '../Courses/Header'
 import Breadcrumbs from './EventBread.jsx'
 import EventElems from './EventElems'
 import Footer from '../../components/Footer'
+import Header from '../MainPage/Header'
+import RightMenuToggle from '../MainPage/RightMenuToggle'
 
 function EventsPage() {
   return (
-    <body className="inner-page">
+    <body className="home1">
      <div className="full-width-header">
-        <Toolbar/>
       <Header/>
       </div>
+      <RightMenuToggle/>
       <Breadcrumbs
     pageName={"Events"}
     />

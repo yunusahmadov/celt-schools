@@ -19,7 +19,6 @@ function Toolbar() {
             <div className="toolbar-share-icon">
               <ul>
                 <li>
-                  <Language/>
                 </li>
                 <li>
                   <a href="#">

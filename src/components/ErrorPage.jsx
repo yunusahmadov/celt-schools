@@ -1,16 +1,17 @@
 import React from 'react';
 import Toolbar from './Toolbar';
-import Header from '../pages/Courses/Header';
 import Footer from './Footer';
 import Breadcrumbs from './Breadcrumbs';
 import ErrorContent from './ErrorContent';
+import Header from '../pages/MainPage/Header';
+import RightMenuToggle from '../pages/MainPage/RightMenuToggle';
 
 const ErrorPage = () => {
   return (
-    <body className="inner-page">
+    <body className="home1">
     <div className="full-width-header">
-       <Toolbar/>
      <Header/>
+     <RightMenuToggle/> 
      </div>
      <Breadcrumbs   
    pageName={"Error Page"}
