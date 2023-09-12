@@ -188,6 +188,10 @@
 
 /* Medium Layout: 991px. */
 @media only screen and (max-width: 991px) {
+    .nav-menu{
+  display: block;
+
+    }
     .sec-spacer,
     .bg12,
     .shop-page-area.single-product-page{

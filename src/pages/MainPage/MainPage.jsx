@@ -11,13 +11,14 @@ import CoursesSlideContainer from './CoursesSlideContainer';
 import CountUp from './CountUpSection';
 import CountUpSection from './CountUpSection';
 import RightMenuToggle from './RightMenuToggle';
-
+import { useSelector } from 'react-redux';
 function MainPage() {
+    const language=useSelector((state)=>state.language.value)
 
   return (
     <body className="home1">
     {/* <!--Preloader area start here--> */}
-    <Preloader/>
+    {/* <Preloader/> */}
     {/* <!--Preloader area end here-->
     
     <!--Full width header Start--> */}
@@ -108,8 +109,7 @@ function MainPage() {
     <div id="rs-courses" className="rs-courses sec-color sec-spacer">
         <div className="container">
             <div className="sec-title mb-50 text-center">
-                <h2>OUR POPULAR COURSES</h2>      
-                <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                <h2>{language.popularCourses}</h2>     
             </div>
             <div className="row" >
                     <CoursesSlideContainer/>
@@ -126,7 +126,7 @@ function MainPage() {
     <div id="rs-events" className="rs-events sec-spacer">
         <div className="container">
             <div className="sec-title mb-50 text-center">
-                <h2>OUR UPCOMING EVENTS</h2>      
+                <h2>{language.upcomingEventsTitle}</h2>      
                 <p>I feel the presence of the Almighty, who formed us in his own image, and the breath.</p>
             </div>
             <div className="row">
