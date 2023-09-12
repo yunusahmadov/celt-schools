@@ -7,7 +7,7 @@ function EventItem() {
         <div class="row rs-vertical-middle">
             <div class="col-md-6">
                 <div class="event-img">
-                    <img src="images/events/4.jpg" alt="events Images" />
+                    <img src="images2/biznes.png" alt="events Images" />
                     <a class="image-link" href="events-details.html" title="University Tour 2018">
                         <i class="fa fa-link"></i>
                     </a>

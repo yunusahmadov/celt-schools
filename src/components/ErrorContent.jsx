@@ -10,7 +10,7 @@ function ErrorContent() {
                     <h1>404</h1>
                     <p>Page was not Found</p>
                     <div class="/">
-                        <a href="index.html">Go to Home Page</a>
+                        <a href="/">Go to Home Page</a>
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ function CoursesCard({courseImage,courseValue,courseCategory,courseDate,courseDu
         <img src={courseImage} alt="" />
             {/* <span class="course-value">{courseValue}</span> */}
             <div class="course-toolbar">
-                <h4 class="course-category"><a href="#">{courseCategory}</a></h4>
+                <h4 class="course-category"><a href="/courses">{courseCategory}</a></h4>
                 {/* <div class="course-date">
                     <i class="fa fa-calendar"></i> {courseDate}
                 </div>
@@ -21,7 +21,7 @@ function CoursesCard({courseImage,courseValue,courseCategory,courseDate,courseDu
         </div>
         <div class="course-body">
             <div class="course-desc">
-                <h4 class="course-title"><a href="courses-details.html">{courseDetails}</a></h4>
+                <h4 class="course-title"><a href="/courses">{courseDetails}</a></h4>
                 <p>
                  {courseDescription}
                 </p>

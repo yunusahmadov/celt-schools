@@ -9374,3 +9374,7 @@ display: none;
 .book_preload{
   transition: .5s;
 }
+.team-img img{
+  /* object-fit: cover; */
+  width: 100%;
+}
