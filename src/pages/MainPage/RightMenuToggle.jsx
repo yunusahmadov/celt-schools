@@ -20,7 +20,8 @@ function RightMenuToggle() {
       </div>
       <ul className="sidebarnav_menu list-unstyled main-menu">
         <li className="current-menu-item menu-item-has-children">
-          <a href="/">Home</a>
+          <a href="/">Home
+          <span className="icon"></span></a>
         </li>
 {/* 
         <li className="menu-item-has-children">
@@ -32,15 +33,13 @@ function RightMenuToggle() {
         </li> */}
 
         <li className="menu-item-has-children">
-          <a href="/courses">Courses</a>
+          <a href="/courses">Courses
+          <span className="icon"></span></a>
         </li>
 
         <li className="menu-item-has-children">
-          <a href="/events">Events</a>
-        </li>
-
-        <li className="menu-item-has-children">
-          <a href="#">Blog</a>
+          <a href="/events">Events
+          <span className="icon"></span></a>
         </li>
         <li>
           <a href="/contacts">
