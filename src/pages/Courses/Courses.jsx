@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CoursesCard from "./CoursesCard";
 import { az_lang } from "../../language/language";
 import { imagesArr } from "../../imagesArr";
@@ -15,7 +15,14 @@ import RightMenuToggle from "../MainPage/RightMenuToggle";
 function Courses() {
   const language=useSelector((state)=>state.language.value)
 
-  console.log(language);
+  useEffect(() => {
+    // Retrieve the selected language from localStorage
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+    if (storedLanguage) {
+      // You can use the storedLanguage variable here
+      console.log("Selected Language from localStorage:", storedLanguage);
+    }
+  }, []);
   return (
     // <body className="inner-page">
     <body className="home1">
