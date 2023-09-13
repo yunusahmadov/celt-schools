@@ -12,22 +12,20 @@ import Preloader from './components/Preloader'
 
 function App() {
   return (
-  <>
-   <BrowserRouter>
-   <ScrollToTopButton />
-   <Preloader/>
-   <Routes>
-  <Route element={<MainPage />} path='/'/>
-  <Route element={<Courses />} path='/courses'/>
-  <Route element={<Contacts />} path='/contacts'/>
-  <Route element={<EventsPage />} path='/events'/>
-  <Route element={<StudentsPage />} path='/graduates'/>
-  <Route element={<ErrorPage/>} path='*' />
-
-
-</Routes>
-   </BrowserRouter>
-  </>
+    <>
+      <BrowserRouter>
+        <ScrollToTopButton />
+        <Preloader />
+        <Routes>
+          <Route element={<MainPage />} path='/' />
+          <Route path='/courses' element={<Courses />}  />
+          <Route element={<Contacts />} path='/contacts' />
+          <Route element={<EventsPage />} path='/events' />
+          <Route element={<StudentsPage />} path='/graduates' />
+          <Route element={<ErrorPage />} path='*' />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
