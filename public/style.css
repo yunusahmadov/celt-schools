@@ -9435,11 +9435,13 @@ align-items: center;
 }
 
 .scroll-to-top.visible {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll-to-top button {
-  background-color: #007bff;
+  background-color: #e41f05;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -9448,10 +9450,11 @@ align-items: center;
   font-size: 20px;
   cursor: pointer;
   outline: none;
+  transition: .4s;
 }
 
 .scroll-to-top button:hover {
-  background-color: #0056b3;
+  background-color:#e84b3a;
 }
 .fa-arrow-up{
   font-weight: 100;

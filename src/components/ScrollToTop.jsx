@@ -28,7 +28,8 @@ function ScrollToTopButton() {
     return (
       <div className={`scroll-to-top ${isVisible ? 'visible' : ''}`}>
         <button onClick={scrollToTop}>
-        <i class="fa fa-arrow-up"></i>
+        <i class="fa fa-chevron-up"></i>
+        
         </button>
       </div>
     );

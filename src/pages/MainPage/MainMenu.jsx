@@ -52,14 +52,14 @@ function MainMenu() {
   }, []);
 
   const hrefs = [
-    "HOME",
-    "A LEVEL DIPLOMA",
-    "ADMISSION",
-    "FIELDS",
-    "SUMMER CAMP",
-    "STUDENTS",
+    "/",
+    "/",
+    "/",
+    "/courses",
+    "/contacts ",
+    "/graduates",
     "/contacts",
-    "REGISTRATION",
+    "/contacts",
   ];
 
   return (
