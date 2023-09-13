@@ -8,12 +8,14 @@ import EventsPage from './pages/Events/EventsPage'
 import ErrorPage from './components/ErrorPage'
 import StudentsPage from './pages/Students/StudentsPage'
 import ScrollToTopButton from './components/ScrollToTop'
+import Preloader from './components/Preloader'
 
 function App() {
   return (
   <>
    <BrowserRouter>
    <ScrollToTopButton />
+   <Preloader/>
    <Routes>
   <Route element={<MainPage />} path='/'/>
   <Route element={<Courses />} path='/courses'/>

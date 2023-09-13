@@ -18,7 +18,7 @@ function MainPage() {
   return (
     <body className="home1">
     {/* <!--Preloader area start here--> */}
-    {/* <Preloader/> */}
+    <Preloader/>
     {/* <!--Preloader area end here-->
     
     <!--Full width header Start--> */}

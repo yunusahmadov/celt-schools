@@ -29,27 +29,29 @@ function MainMenu() {
     };
   }, []);
 
-  // Обработчик прокрутки страницы
+  // Функция для добавления/удаления класса "sticky"
+  const handleScroll = () => {
+    const header = document.querySelector(".testtt");
+    if (window.scrollY > 200) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  };
+
+  // Добавляем слушателя события прокрутки страницы
   useEffect(() => {
-    const handleScroll = () => {
-      // Высота вашего заголовка (подставьте свое значение)
-      const headerHeight = 100; // 100px in this example
-
-      if (window.scrollY >= headerHeight) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-    };
-
-    // Добавляем слушателя события прокрутки
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Удаляем слушателя при размонтировании компонента
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
+
+
 
   const hrefs = [
     "/",
@@ -65,11 +67,11 @@ function MainMenu() {
   return (
     <div>
       <div
-        className="menu-area menu-sticky"
-        style={bottomMenuOpened ? { height: "540px" } : { height: "50px" }}
+        className="testtt menu-area menu-sticky"
+        style={bottomMenuOpened ? { height: "540px" } : { height: "55px" }}
       >
         <div className="container">
-          <div className={`main-menu ${showHeader ? "visible" : ""}`}>
+          <div className={`main-menu `}>
             <div className="row relative">
               <div className="col-sm-12">
                 {/* <!-- <div id="logo-sticky" className="text-center">
@@ -83,8 +85,8 @@ function MainMenu() {
                     className="nav-menu"
                     style={
                       bottomMenuOpened
-                        ? { visibility: "visible" }
-                        : { visibility: windowWidth >= 991 ? "visible" : "hidden" }
+                        ? { visibility: "visible" ,opacity:'1'}
+                        : { visibility: windowWidth >= 991 ? "visible" : "hidden",opacity: windowWidth >= 991 ? "1" : "0"  }
                     }
                   >
                     {language.nav.map((item, i) => (
