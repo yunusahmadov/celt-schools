@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactsCard from './ContactsCard'
 
-function ContactsSection() {
+function  ContactsSection() {
   return (
     <div className="contact-section">
     <h2>Tədris Mərkəzlərimiz</h2>
@@ -168,9 +168,7 @@ function ContactsSection() {
         centerWebsite={"https://celt.az/celt-hazi-aslanov/"}
 
       />
-    </div>
-    <div className="contact-card-section2">
-      <ContactsCard
+            <ContactsCard
         centerName={"CELT Sumqayıt"}
         centerPhone1={"050 550 51 91"}
         centerPhone2={"018 6540045"}
@@ -211,7 +209,8 @@ function ContactsSection() {
         centerWebsite={"https://celtit.com/contact.html"}
 
       />
-            <ContactsCard
+           
+    <ContactsCard
         centerName={"CELT IT İçərişəhər"}
         centerPhone1={"050 588 15 17"}
         centerPhone2={"012 505 34 34"}
@@ -225,8 +224,6 @@ function ContactsSection() {
         centerWebsite={"https://celtit.com/contact.html"}
 
       />
-      </div>
-    <div className="contact-card-section">
     <ContactsCard
         centerName={"CELT Primary"}
         primaryText={"Nərimanov"}
@@ -315,7 +312,8 @@ function ContactsSection() {
         centerWebsite={"https://celt.az/celt-kids-sumqayit/"}
 
       />
-        </div>
+    </div>
+
   </div>
   )
 }

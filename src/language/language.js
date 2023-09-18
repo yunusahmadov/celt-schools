@@ -12,6 +12,9 @@ export const az_lang = {
         "Kampus  Ünvanları",
         "Qeydiyyat"
     ],
+    call:"Zəng et",
+    sendMess:"Mesaj yaz",
+    seePage:'Səhifəyə bax',
     //Courses Slide on MainPage
     popularCourses:"POPULAR KURSLARIMIZ",
     //ACHEIVEMENTS on Main Page
@@ -132,8 +135,9 @@ export const az_lang = {
             img:'./images2/dizayn.png',
             title: 'Dizayn və İncəsənət',
             desc: 'Sənət xəyali və ya texniki bir qabiliyyəti ifadə edən yaradıcı bir fəaliyyətdir. Bir məhsul, bir obyekt istehsal edir. Sənət vizual yaratmaq, əsərlər yaratmaq və müəllifin xəyali zehnini ifadə etməkdə fərqli bir fəaliyyət növüdür.',
-            details:"Beynəlxalq Diplom və qəbul qarantiyası"
+          details:"Beynəlxalq Diplom və qəbul qarantiyası"
         },
+        // contacts
 
 
     ]
@@ -210,4 +214,8 @@ export const en_lang={
     servicesAcceptance:"Acceptance conditions",
     servicesTrend:"Trending courses",
     future:"FUTURE",
+            // contacts
+            call:"Call" ,
+            sendMess:"Send a message",
+            seePage:'See the page',
 }
