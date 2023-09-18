@@ -1,15 +1,17 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,centerFacebook,centerInstagram,primaryText,centerWebsite}) {
   
   let cut=centerPhone1.replaceAll(' ', '').substring(1)
+  const language=useSelector((state)=>state.language.value)
   // console.log(cut);
  
   return (
     <div className="contact-card">
       <h2>{centerName}</h2>
       <span>{primaryText}</span>
-      <h3>Zəng et</h3>
+      <h3>{language.call}</h3>
       <p>
         <i class="fa fa-mobile"></i>
         <a href={`tel:${centerPhone1}`}>
@@ -23,7 +25,7 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
         </a>
       </p>
         <a className='wp-message' href={`https://wa.me/+994${cut}`}>
-          Mesaj yaz
+         {language.sendMess}
           <svg
     xmlns="http://www.w3.org/2000/svg"
     width={14}
@@ -38,7 +40,7 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
     />
   </svg>
           </a>
-        <a className='page-check' href={`${centerWebsite}`}>Səhifəyə bax</a>
+        <a className='page-check' href={`${centerWebsite}`}>{language.seePage}</a>
       <div className="center-icons">
         <a href={centerLocation}>
           <i class="fa fa-map-marker"></i>
