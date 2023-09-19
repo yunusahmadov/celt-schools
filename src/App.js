@@ -15,7 +15,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTopButton />
-        <Preloader />
+        {/* <Preloader /> */}
         <Routes>
           <Route element={<MainPage />} path='/' />
           <Route path='/courses' element={<Courses />}  />

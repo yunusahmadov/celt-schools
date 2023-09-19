@@ -55,12 +55,9 @@ function MainMenu() {
 
   const hrefs = [
     "/",
-    "/",
-    "/",
     "/courses",
-    "/contacts ",
     "/graduates",
-    "/contacts",
+    "/contacts ",
     "/contacts",
   ];
 
@@ -68,59 +65,27 @@ function MainMenu() {
     <div>
       <div
         className="testtt menu-area menu-sticky"
-        style={bottomMenuOpened ? { height: "540px" } : { height: "55px" }}
+        // style={bottomMenuOpened ? { height: "540px" } : { height: "55px" }}
       >
-        <div className="container">
-          <div className={`main-menu `}>
-            <div className="row relative">
-              <div className="col-sm-12">
-                {/* <!-- <div id="logo-sticky" className="text-center">
-                                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-                                </div> --> */}
-                <a className="rs-menu-toggle" onClick={() => dispatch(openBottomMenu())}>
-                  <i className="fa fa-bars"></i>Menu
-                </a>
-                <nav className="rs-menu">
-                  <ul
-                    className="nav-menu"
-                    style={
-                      bottomMenuOpened
-                        ? { visibility: "visible" ,opacity:'1'}
-                        : { visibility: windowWidth >= 991 ? "visible" : "hidden",opacity: windowWidth >= 991 ? "1" : "0"  }
-                    }
-                  >
-                    {language.nav.map((item, i) => (
-                      <li
-                        key={i}
-                        className={`menu-item-has-children ${i === 0 ? "first-item" : ""}`}
-                      >
-                        <a href={hrefs[i]} style={{ color: i === 0 ? "red" : "white" }}>
-                          {item}
-                        </a>
-                      </li>
-                    ))}
-                    <li>
-                      <Language />
-                    </li>
-                  </ul>
-                </nav>
-                <div className="right-bar-icon rs-offcanvas-link text-right">
-                  {/* <a
-                    className="hidden-xs rs-search"
-                    data-target=".search-modal"
-                    data-toggle="modal"
-                    href="#"
-                  >
-                    <i className="fa fa-search"></i>
-                  </a> */}
-                  <a id="nav-expander" className="nav-expander fixed" onClick={() => dispatch(openMenu())}>
-                    <i className="fa fa-bars fa-lg white"></i>
+      <nav className="">
+            <ul
+              className=""
+            >
+              {language.nav.map((item, i) => (
+                <li
+                  key={i}
+                  className={` ${i === 0 ? "first-item" : ""}`}
+                >
+                  <a href={hrefs[i]} style={{ color: i === 0 ? "red" : "white" }}>
+                    {item}
                   </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </li>
+              ))}
+              <li>
+                <Language />
+              </li>
+            </ul>
+          </nav>
       </div>
     </div>
   );
@@ -128,3 +93,64 @@ function MainMenu() {
 
 export default MainMenu;
 
+
+
+
+// <div>
+// <div
+//   className="testtt menu-area menu-sticky"
+//   style={bottomMenuOpened ? { height: "540px" } : { height: "55px" }}
+// >
+//   <div className="container">
+//     <div className={`main-menu `}>
+//       <div className="row relative">
+//         <div className="col-sm-12">
+//           {/* <!-- <div id="logo-sticky" className="text-center">
+//                               <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+//                           </div> --> */}
+//           <a className="rs-menu-toggle" onClick={() => dispatch(openBottomMenu())}>
+//             <i className="fa fa-bars"></i>Menu
+//           </a>
+//           <nav className="rs-menu">
+//             <ul
+//               className="nav-menu"
+//               style={
+//                 bottomMenuOpened
+//                   ? { visibility: "visible" ,opacity:'1'}
+//                   : { visibility: windowWidth >= 991 ? "visible" : "hidden",opacity: windowWidth >= 991 ? "1" : "0"  }
+//               }
+//             >
+//               {language.nav.map((item, i) => (
+//                 <li
+//                   key={i}
+//                   className={`menu-item-has-children ${i === 0 ? "first-item" : ""}`}
+//                 >
+//                   <a href={hrefs[i]} style={{ color: i === 0 ? "red" : "white" }}>
+//                     {item}
+//                   </a>
+//                 </li>
+//               ))}
+//               <li>
+//                 <Language />
+//               </li>
+//             </ul>
+//           </nav>
+//           <div className="right-bar-icon rs-offcanvas-link text-right">
+//             {/* <a
+//               className="hidden-xs rs-search"
+//               data-target=".search-modal"
+//               data-toggle="modal"
+//               href="#"
+//             >
+//               <i className="fa fa-search"></i>
+//             </a> */}
+//             <a id="nav-expander" className="nav-expander fixed" onClick={() => dispatch(openMenu())}>
+//               <i className="fa fa-bars fa-lg white"></i>
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// </div>
