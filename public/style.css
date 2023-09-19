@@ -9463,3 +9463,39 @@ align-items: center;
   background-color: red;
   transition: 2s;
 }
+.rs-header-top{
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+.testtt nav ul{
+  width: 100%;
+display: flex;
+/* justify-content: space-between; */
+justify-content:flex-end;
+gap: 50px;
+}
+.rs-header-left{
+  width: 20%;
+}
+.rs-header-right{
+  width: 80%;
+}
+.rs-header-right ul li{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.rs-header-right ul li a{
+  color: black !important;
+font-family: 'Roboto Condensed' ;
+text-transform:uppercase;
+
+}
+nav{
+  background-color:white;
+}

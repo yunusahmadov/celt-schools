@@ -4,10 +4,7 @@ export const az_lang = {
       //MainPage
     nav: [
         "Ana səhifə",
-        "A Level Diplomu",
-        "Qəbul",
         "Sahələr",
-        "Yay Düşərgəsi",
         "Tələbələr",
         "Kampus  Ünvanları",
         "Qeydiyyat"
@@ -147,10 +144,7 @@ export const en_lang={
     //MainPage
     nav: [
         "Home",
-        "A Level Diploma",
-        "Admission",
         "Fields",
-        "Summer Camp",
         "Students",
         "Campus Addresses",
         "Registration"
