@@ -103,6 +103,7 @@
     .rs-banner-section2 .banner-inner{
         top: 55%;
     }
+
 }
 /* Tablet Layout: 1199px. */
 @media only screen and (max-width: 1199px) {
@@ -183,15 +184,33 @@
     .rs-about-style8 .author-section .align-img{
         margin-right: 14px;
     }
-    
+    .testtt nav .top-ul{
+        gap: 25px;
+    }
 }
 
 /* Medium Layout: 991px. */
 @media only screen and (max-width: 991px) {
     .nav-menu{
   display: block;
-
     }
+ 
+    .top-ul {
+        display: none !important;
+    }
+    .abc{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .rs-header-left{
+width: auto;
+    }
+    .rs-header-right{
+        width: auto;
+    }
+    .header-le
     .sec-spacer,
     .bg12,
     .shop-page-area.single-product-page{
@@ -561,6 +580,13 @@
         font-size: 40px;
         line-height: 1.4;
     }
+    #rs-header-top{
+        position: sticky !important;
+        background-color: red;
+        top: 0;
+        left: 0;
+        z-index: 999999 ;
+    }
 }
 
 /* Tablet Layout: 768px. */
@@ -602,6 +628,9 @@
 
 /* Mobile Layout: 767px. */
 @media only screen and (max-width: 767px) {
+      nav.right_menu_togle{
+        width: 18em;
+    }
     .rs-counter-style7.pb-100 {
         padding-bottom: 20px !important;
     }
@@ -919,6 +948,9 @@
 @media only screen and (max-width: 575px) {
 	#rs-slider .slide-content .slider-title {
         font-size: 25px;
+    }
+    nav.right_menu_togle{
+        width: 15em;
     }
     .rs-courses-3 .course-item .course-toolbar .course-category a,
     #rs-slider .slide-content .slider-title{
