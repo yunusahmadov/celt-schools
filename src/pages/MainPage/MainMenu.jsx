@@ -31,15 +31,15 @@ function MainMenu() {
 
   // Функция для добавления/удаления класса "sticky"
   const handleScroll = () => {
-    const header = document.querySelector(".testtt");
+    const header = document.querySelector(".rs-header");
     if (window.scrollY > 200) {
-      header.classList.add("sticky");
+      header.classList.add("rs-header-sticky");
     } else {
-      header.classList.remove("sticky");
+      header.classList.remove("rs-header-sticky");
     }
   };
 
-  // Добавляем слушателя события прокрутки страницы
+  // // Добавляем слушателя события прокрутки страницы
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -65,12 +65,17 @@ function MainMenu() {
     <div>
       <div
         className="testtt menu-area menu-sticky"
-        // style={bottomMenuOpened ? { height: "540px" } : { height: "55px" }}
       >
+        
       <nav className="">
             <ul
-              className=""
+              className="top-ul"
             >
+
+                {/* <a href="" className="sticky-logo">
+                <img src="images/logo.png" alt="logo"/>
+
+                </a> */}
               {language.nav.map((item, i) => (
                 <li
                   key={i}
@@ -83,9 +88,16 @@ function MainMenu() {
               ))}
               <li>
                 <Language />
+              </li>        
+            </ul>
+            <ul className="abc">
+            <li>
+              <i className="fa fa-bars fa-lg white" onClick={() => dispatch(openMenu())}></i>
               </li>
             </ul>
           </nav>
+          {/* <RightMenuToggle/>  */}
+          
       </div>
     </div>
   );
