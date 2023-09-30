@@ -13,7 +13,7 @@ function StudentsBreadcrumbs({pageName}) {
             <h1 className="page-title">{language.future}</h1>
             <ul>
               <li>
-                <a className="active" href="index.html">
+                <a className="active" href="/">
                   Home
                 </a>
               </li>

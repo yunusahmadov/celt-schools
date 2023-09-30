@@ -41,7 +41,7 @@ function Courses() {
     <RightMenuToggle/>
      
       <Breadcrumbs
-    pageName={"Our Courses"}
+    pageName={language.ourCourses}
     />
       {/* <!-- Courses Start --> */}
       <OurCourses/>

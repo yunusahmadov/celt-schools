@@ -9,6 +9,9 @@ export const az_lang = {
         "Kampus  Ünvanları",
         "Qeydiyyat"
     ],
+    home:'Ana səhifə',
+    grads:"Bizim məzunlarımız",
+    ourCourses:'Bizim kurslarımız',
     call:"Zəng et",
     sendMess:"Mesaj yaz",
     seePage:'Səhifəyə bax',
@@ -149,7 +152,9 @@ export const en_lang={
         "Campus Addresses",
         "Registration"
     ],
-
+    home:'Home',
+    grads:"Our Graduates",
+    ourCourses:'Our Courses',
     //Courses Slide on MainPage
     popularCourses: "OUR POPULAR COURSES",
     //ACHEIVEMENTS on Main Page
