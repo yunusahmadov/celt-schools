@@ -14,7 +14,7 @@ function Breadcrumbs({pageName}) {
             <ul>
               <li>
                 <a className="active" href="/">
-                  Home
+                  {language.home}
                 </a>
               </li>
               <li>{pageName}</li>

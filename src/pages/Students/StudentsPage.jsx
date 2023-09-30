@@ -7,16 +7,19 @@ import Header from '../MainPage/Header'
 import RightMenuToggle from '../MainPage/RightMenuToggle'
 import Preloader from '../../components/Preloader'
 import StudentCard from './StudentCard'
+import { useSelector } from 'react-redux'
 
 function StudentsPage() {
+
+    const language=useSelector((state=>state.language.value))
   return (
     <body class="home1">
-    <Preloader/>
+    {/* <Preloader/> */}
       <div className="full-width-header">
 		<Header/>
       </div>
       <StudentsBreadcrumbs
-    pageName={"Our Graduates"}
+    pageName={language.grads}
     />
 	<RightMenuToggle/>
     {/* <!--Full width header End--> */}
