@@ -9729,11 +9729,9 @@ padding: 0 12px;
 }
 .swiper-button-prev{
 left: 0px !important;
+/* background-color: red; */
+/* margin-left: 20px; */
 }
 .swiper-button-next{
   right: 0px !important;
   }
-
-.main-slider{
-  padding: 0 35px !important;
-}

@@ -33,7 +33,7 @@ function MainTopSlider() {
       breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 100,
           },
           767: {
             slidesPerView:2,
@@ -62,5 +62,4 @@ function MainTopSlider() {
   </>
   );
 }
-
 export default MainTopSlider
