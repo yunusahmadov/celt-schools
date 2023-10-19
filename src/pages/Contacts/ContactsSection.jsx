@@ -1,10 +1,13 @@
 import React from 'react'
 import ContactsCard from './ContactsCard'
+import { useSelector } from 'react-redux'
 
 function  ContactsSection() {
+  const language=useSelector((state)=>state.language.value)
+
   return (
     <div className="contact-section">
-    <h2>Tədris Mərkəzlərimiz</h2>
+    <h2>{language.trainingCenters}</h2>
     <div className="contact-card-section">
       <ContactsCard     
         centerName={"CELT High School"}
@@ -296,6 +299,7 @@ function  ContactsSection() {
         centerInstagram={
           "https://www.instagram.com/celtpreschool_sahil/ "
         }
+        centerWebsite={"https://celt.az/celt-khatai/"}
       />
            <ContactsCard
         centerName={"CELT Primary"}

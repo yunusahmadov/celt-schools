@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../../components/Footer'
 import Breadcrumbs from '../Events/EventBread'
 import Toolbar from '../../components/Toolbar'
@@ -8,9 +8,29 @@ import RightMenuToggle from '../MainPage/RightMenuToggle'
 import Preloader from '../../components/Preloader'
 import StudentCard from './StudentCard'
 import { useSelector } from 'react-redux'
+import axios from 'axios'
 
 function StudentsPage() {
+    const [studentState, setStudentState] = useState([])
+    const [showMore, setShowMore] = useState(1)
 
+    const plusShowMore = () => {
+        setShowMore(prevShowMore => prevShowMore + 1);
+      };
+
+      const minusShowLess = () => {
+        setShowMore(prevShowLess => prevShowLess -1);
+      };
+    useEffect(()=>{
+        axios.get(`https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/accepted-students?page=${showMore}&lang_id=1`)
+        .then(resp=>{
+            console.log(resp.data)
+            setStudentState(resp.data)
+            console.log(resp.data);
+        })
+    },[showMore])
+
+    console.log(studentState.length);
     const language=useSelector((state=>state.language.value))
   return (
     <body class="home1">
@@ -20,58 +40,32 @@ function StudentsPage() {
       </div>
       <StudentsBreadcrumbs
     pageName={language.grads}
+    pageTitle={language.studPageTitle}
     />
 	<RightMenuToggle/>
     {/* <!--Full width header End--> */}
+    <div className="student-container">
+        {
+            studentState?.map((data, i)=>{
+                return(
+                    
+                    <StudentCard key={i} data={data}/>
+                )
+            })
+        }
+    </div>
+    <div className='loadMoreCont'>
+        {
+            studentState.length % 20==0?
+            <div className="showmore" onClick={plusShowMore}>LOAD MORE</div>:''
+        }
+        {
+            showMore !==1 ?
+        <div className="showless" onClick={minusShowLess}>SHOW LESS</div>:''
 
-    <div id="rs-team-2" class="rs-team-2 team-all pt-100 pb-70">
-			<div class="container">
-				<div class="row">
-						<StudentCard/>
-						<StudentCard/>
-						<StudentCard/>
-						<StudentCard/>
-				</div>
-				<div class="row">
-				<StudentCard/>
-				<StudentCard/>
-				<StudentCard/>
-				<StudentCard/>
-
-				</div>
-				<div class="row">	
-				<StudentCard/>
-				<StudentCard/>
-				<StudentCard/>
-				<StudentCard/>
-
-			    </div>
-			</div>
-        </div>
-
+        }
+    </div>
              
-    {/* <!-- Partner Start --> */}
-    {/* <div id="rs-partner" class="rs-partner sec-color pt-70 pb-170">
-        <div class="container">
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="80" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/1.png" alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/2.png" alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/3.png" alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/4.png" alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img src="images/partner/5.png" alt="Partner Image"></a>
-                </div>
-            </div>
-        </div>
-    </div> */}
     {/* <!-- Partner End --> */}
    
     {/* <!-- Footer Start --> */}

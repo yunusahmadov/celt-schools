@@ -32,7 +32,6 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
     height={14}
     viewBox="0 0 48 48"
   >
-    <title>{"Whatsapp-color"}</title>
     <path
       fill="#67C15E"
       fillRule="evenodd"

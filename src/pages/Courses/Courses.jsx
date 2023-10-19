@@ -42,6 +42,7 @@ function Courses() {
      
       <Breadcrumbs
     pageName={language.ourCourses}
+    pageTitle={language.areas}
     />
       {/* <!-- Courses Start --> */}
       <OurCourses/>

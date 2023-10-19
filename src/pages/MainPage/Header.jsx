@@ -1,6 +1,6 @@
 import React from 'react'
 import MainMenu from './MainMenu'
-
+import logo from "../../images/header-logo.png"
 function Header() {
   return (
     <>
@@ -9,7 +9,7 @@ function Header() {
             {/* <!-- Header Top Start --> */}
             <div className="rs-header-top">
             <div className="rs-header-left">
-            <a href="/"><img src="images/logo.png" alt="logo"/></a>
+            <a href="/"><img src={logo} alt="logo"/></a>
             </div>
             <div className="rs-header-right">
             <MainMenu/>

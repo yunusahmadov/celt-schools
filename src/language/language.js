@@ -10,8 +10,12 @@ export const az_lang = {
         "Qeydiyyat"
     ],
     home:'Ana səhifə',
+    trainingCenters:'Tədris Mərkəzlərimiz',
+    contacts:"Əlaqə",
     grads:"Bizim məzunlarımız",
     ourCourses:'Bizim kurslarımız',
+    campusPageTitlte:'KAMPUS ÜNVANLARI',
+    studPageTitle:'Tələbələr',
     call:"Zəng et",
     sendMess:"Mesaj yaz",
     seePage:'Səhifəyə bax',
@@ -25,7 +29,6 @@ export const az_lang = {
     achClient:"MƏMNUN MÜŞTƏRİ",
     //UPCOMING EVENTS on MainPage
     upcomingEventsTitle:"GƏLƏCƏK TƏDBİRLƏRİMİZ",
-
 
     servicesTrend:"Trend kurslar",
     servicesDiplom:"Diplom",
@@ -154,7 +157,10 @@ export const en_lang={
     ],
     home:'Home',
     grads:"Our Graduates",
+    studPageTitle:'Students',
+    campusPageTitlte:'CAMPUS ADDRESSES',
     ourCourses:'Our Courses',
+    areas:"Fields",
     //Courses Slide on MainPage
     popularCourses: "OUR POPULAR COURSES",
     //ACHEIVEMENTS on Main Page
@@ -165,7 +171,8 @@ export const en_lang={
     achClient:"SATISFIED CLIENT",
     //UPCOMING EVENTS on MainPage
     upcomingEventsTitle: "OUR UPCOMING EVENTS",
-
+    contacts:"Contact",
+    trainingCenters:"Training Centers",
 
 
 
@@ -212,7 +219,7 @@ export const en_lang={
     servicesStudents:"Students",
     servicesAcceptance:"Acceptance conditions",
     servicesTrend:"Trending courses",
-    future:"FUTURE",
+    future:"FUTURE FIELDS",
             // contacts
             call:"Call" ,
             sendMess:"Send a message",
