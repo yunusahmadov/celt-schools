@@ -9,7 +9,7 @@ function Language() {
     const dispatch = useDispatch();
     const [selectedLanguage, setSelectedLanguage] = useState('AZ');
 
-    // Загрузить значение языка из localStorage при первой загрузке
+   
     useEffect(() => {
         const storedLanguage = localStorage.getItem('selectedLanguage');
         if (storedLanguage) {

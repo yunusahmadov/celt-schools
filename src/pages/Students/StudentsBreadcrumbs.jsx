@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-function StudentsBreadcrumbs({pageName}) {
+function StudentsBreadcrumbs({pageName,pageTitle}) {
   const language=useSelector((state)=>state.language.value)
     
   return (
@@ -10,7 +10,7 @@ function StudentsBreadcrumbs({pageName}) {
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <h1 className="page-title">{language.future}</h1>
+            <h1 className="page-title">{pageTitle}</h1>
             <ul>
               <li>
                 <a className="active" href="/">

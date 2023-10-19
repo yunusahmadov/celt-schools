@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer id="rs-footer" className="footer-bg3 rs-footer mt-0">
+    <footer id="rs-footer" className=" rs-footer mt-0">
       <div className='shadow'>
     {/* <div className="container">
         <div className="row footer-contact-desc">
@@ -43,7 +43,7 @@ function Footer() {
       </div> */}
 
     {/* <!-- Footer Top --> */}
-    <div className="footer-top">
+    {/* <div className="footer-top">
       <div className="container">
         <div className="footer-share">
           <ul>
@@ -75,14 +75,14 @@ function Footer() {
           </ul>
         </div>
       </div>
-    </div>
+    </div> */}
 
     {/* <!-- Footer Bottom --> */}
     <div className="footer-bottom">
       <div className="container">
         <div className="copyright">
           <p>
-            © 2018 <a href="#">RS Theme</a>. All Rights Reserved.
+            © 2023 <a href="#">Celt Colleges</a>. All Rights Reserved.
           </p>
         </div>
       </div>

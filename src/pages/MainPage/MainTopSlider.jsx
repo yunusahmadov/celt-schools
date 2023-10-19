@@ -1,56 +1,65 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Pagination, } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Pagination,Autoplay,Navigation } from 'swiper/modules';
 import MainSliderContent from './MainSliderContent';
-
-
+import axios from 'axios';
+import SliderCard from './SliderCard';
 
 function MainTopSlider() {
+  const [studentState, setStudentState] = useState([])
+
+  useEffect(()=>{
+    axios.get(`https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/accepted-students?page=1&lang_id=1`)
+    .then(resp=>{
+        // console.log(resp.data)
+        setStudentState(resp.data)
+        console.log(resp.data);
+    })
+},[])
   return (
-    <div className='main-top-slider'>
-      <Swiper
-        pagination={{
-          // dynamicBullets: true,
-          clickable:true
+    <>
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={30}
+  
+      loop={true}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      navigation={true}
+      breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          767: {
+            slidesPerView:2,
+            spaceBetween: 40,
+          },
+          1025: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
         }}
-        loop={true}
-        grabCursor={true}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className='main-top-slider-container main-top-slider-container-1'>
-          <div className="slider-shadow">
-            <MainSliderContent
-              sliderTitle={"WELCOME TO EDULEARN"}
-              sliderText={"Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo. Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor."}
-            />
-          </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='main-top-slider-container main-top-slider-container-2'>
-          <div className="slider-shadow">
-          <MainSliderContent
-              sliderTitle={"ARE YOU READY TO APPLY?"}
-              sliderText={"Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo. Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor."}
-            />
-          </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='main-top-slider-container main-top-slider-container-3'>
-          <div className="slider-shadow">
-          <MainSliderContent
-              sliderTitle={"ARE YOU READY TO APPLY?"}
-              sliderText={"Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo. Nunc quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor."}
-            />
-          </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+      
+      modules={[Pagination,Autoplay,Navigation]}
+      className="container main-slider"
+    >
+    {
+            studentState?.map((data, i)=>{
+                return(
+                  <SwiperSlide>
+                    <SliderCard key={i} data={data}/>
+                    </SwiperSlide>
+                )
+            })
+        }
+
+    </Swiper>
+  </>
   );
 }
 

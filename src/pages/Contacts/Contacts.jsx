@@ -8,8 +8,12 @@ import ContactsHeader from "./ContactsHeader";
 import ContactsSection from "./ContactsSection";
 import Header from "../MainPage/Header";
 import RightMenuToggle from "../MainPage/RightMenuToggle";
+import { useSelector } from "react-redux";
 
 function Contacts() {
+
+  const language=useSelector((state=>state.language.value))
+
   return (
     <body class="home1">
       {/* <Preloader/> */}
@@ -26,7 +30,10 @@ function Contacts() {
       {/* <!--Full width header End--> */}  
       <RightMenuToggle/>
       {/* <!-- Breadcrumbs Start --> */}
-      <Breadcrumbs pageName={"Contact"} />
+      <Breadcrumbs
+       pageName={language.contacts}
+       pageTitle={language.campusPageTitlte}
+       />
       {/* <!-- Breadcrumbs End --> */}
 
       {/* <!-- Contact Section Start --> */}
