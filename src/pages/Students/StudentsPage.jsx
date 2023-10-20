@@ -22,7 +22,8 @@ function StudentsPage() {
         setShowMore(prevShowLess => prevShowLess -1);
       };
     useEffect(()=>{
-        axios.get(`https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/accepted-students?page=${showMore}&lang_id=1`)
+                   https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/high-sch-accepted-students?page=1
+        axios.get(`https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/high-sch-accepted-students?page=2`)
         .then(resp=>{
             console.log(resp.data)
             setStudentState(resp.data)

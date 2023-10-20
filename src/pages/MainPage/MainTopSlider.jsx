@@ -23,10 +23,10 @@ function MainTopSlider() {
     <Swiper
       slidesPerView={1}
       spaceBetween={30}
-  
+      speed={2000}
       loop={true}
       autoplay={{
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       navigation={true}
