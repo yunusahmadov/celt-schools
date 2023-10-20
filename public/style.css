@@ -9090,6 +9090,9 @@ justify-content: center;
 align-items: center;
 border-radius: 10px;
 transition: .5s;
+border: dotted 2px #1E398F;
+border-bottom-left-radius: 55px;
+
  /* background-color: #f0f0f0 */
 
 }
@@ -9856,3 +9859,130 @@ font-family: 'Raleway', sans-serif;
   margin-top: 20px;
 
   }
+
+
+  /* Cambridge */
+
+  .cambridge-cont{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cambridge-left{
+    max-width: 45%;
+  }
+  .cambridge-right{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    /* margin-top: 50px; */
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .cambridge-right button{
+    background-color:#333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+  }
+  .cambridge-right h3{
+    margin: 0;
+    margin-top: 15px;
+    color:#333;
+
+  }
+  .cambridge-right p{
+    max-width: 75%;
+  }
+
+
+.leftarrow{
+  width: 7px;
+  height: 13px;
+  margin-left: 6px;
+}
+.flexible{
+  background: #252f38;
+
+}
+
+/* Flexible */
+.flexible{
+  color: white;
+  text-align: center;
+  padding: 50px 0 60px;
+  margin-top: 10px;
+
+}
+.flexible h2{
+  color: white;
+  font-size: 42px;
+}
+.flexible-center{
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.flexible-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+font-family: 'Raleway', sans-serif;
+text-align: start;
+}
+/* .flexible-card p{
+  max-width: 50%;
+} */
+.flexible-card img{
+
+  width: 50px ;
+  height: 50px ;
+
+}
+.pinkbtn{
+  background-color: #c2366f;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 40px 16px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 14px;
+}
+.pinkbtn i {
+  margin-left: 10px;
+}
+.broad-section,
+.apply-section{
+  background-image: url('./images2/broad.jpg');
+  padding: 50px 0;
+  background-position: center;
+  background-size: cover;
+  color: white;
+font-family: 'Raleway', sans-serif;
+height: 500px;
+}
+.apply-section{
+  background-image: url('./images2/A-levels_Bannerrow_apply.jpg');
+  position: relative;
+  z-index: 32;
+}
+.broad-section h2,
+.apply-section h2{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

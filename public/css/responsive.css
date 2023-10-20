@@ -215,12 +215,14 @@
     .student-container{
         max-width: 960px;
     }
-    /* .slider-student-card-top svg{
-        bottom: -25px;
+    .cambridge-cont {
+        align-items: end;
     }
-    .slider-student-card-top img{
-        bottom: -25px;
-    } */
+    .flexible-center{
+
+        max-width: 100%;
+        gap: 10px;
+      }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -689,7 +691,20 @@ width: auto;
         width: 100%;
         padding: 8% 2%;
       }
-
+      .cambridge-right h3{
+        font-size: 18px;
+      }
+      .cambridge-right p{
+        max-width: 100%;
+        font-size: 14px;
+      }
+      .cambridge-right button{
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+      .camb-logo{
+        width: 40%;
+      }
 
 
 }
@@ -1057,12 +1072,33 @@ width: auto;
     .rs-banner-section2 .banner-inner .btn-area{
         padding-top: 5px;
     }
-      /* .slider-student-card-top svg{
-        bottom: -0px ;
+    .cambridge-cont{
+        flex-direction: column;
+        gap: 40px;
     }
-    .slider-student-card-top img{
-        bottom: -20px ;
-    } */
+    .cambridge-left{
+        max-width: 100%;
+    }
+    .cambridge-right{
+        max-width: 100%;
+    }
+    .cambridge-right p{
+        margin-top: 20px;
+    }
+    .flexible-center{
+        flex-direction: column;
+        
+      }
+      .flexible-card{
+        width: 100%;
+        justify-content: start;
+      }
+      .pinkbtn{
+        width: 278px;
+        padding: 0;
+        height: 50px;
+
+      }
 }
 @media only screen and (max-width: 700px) {
 .student-card{
@@ -1396,7 +1432,11 @@ height: 258px;
         width: 100%;
     }
 }
-
+@media only screen and (max-width: 330px) {
+	.cambridge-right h3{
+        font-size: 17px;
+    }
+}
 /* Extra Small Device : 320px. */
 @media only screen and (max-width: 320px) {
 	

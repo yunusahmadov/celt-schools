@@ -22,6 +22,7 @@ function TwoCards() {
             firstText={'UK Medical School is an aspiration for many elite students. But it is extremely demanding and competitive.'}
             secondText={'Our specialist Medical School preparation programme will help you stand out from the rest.'}
             btnText={'MEDICINE PATHWAYS AT KINGS '}
+            
             />
         </div>
    </div>
