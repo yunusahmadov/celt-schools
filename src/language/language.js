@@ -7,7 +7,7 @@ export const az_lang = {
         "Sahələr",
         "Tələbələr",
         "Kampus  Ünvanları",
-        "Qeydiyyat"
+        "Events"
     ],
     home:'Ana səhifə',
     trainingCenters:'Tədris Mərkəzlərimiz',
@@ -153,7 +153,7 @@ export const en_lang={
         "Fields",
         "Students",
         "Campus Addresses",
-        "Registration"
+        "Events"
     ],
     home:'Home',
     grads:"Our Graduates",

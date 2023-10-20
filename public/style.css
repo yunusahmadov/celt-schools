@@ -9593,7 +9593,8 @@ padding: 0 12px;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
 .slider-student-card{
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   /* height: 350px; */
 }
 
@@ -9729,9 +9730,56 @@ padding: 0 12px;
 }
 .swiper-button-prev{
 left: 0px !important;
+top: 230px !important;
 /* background-color: red; */
 /* margin-left: 20px; */
 }
 .swiper-button-next{
   right: 0px !important;
+top: 230px !important;
+
   }
+.cardBg1{
+  background-image: url('./images2/A-levels_TwoBlock_Oxbridge.jpg');
+}
+.cardBg2{
+  background-image: url('./images2/A-levels_Twoblock_medical.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.whole-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.preperation-card{
+  width: calc(50% - 30px);
+  position: relative;
+ padding: 5% 2%;
+}
+.prepertaion-top{
+  background-attachment: fixed;
+  background-color: #c2366f;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  padding:10px 30px;
+  color: white;
+  font-size: 32px;
+}
+.preperation-card p{
+  color: white;
+}
+.prepertaion-bottom{
+  background-color: #c2366f;
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white;
+  bottom: -20px;
+  font-style: 28px;
+}

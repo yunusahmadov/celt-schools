@@ -12,6 +12,7 @@ import CountUp from './CountUpSection';
 import CountUpSection from './CountUpSection';
 import RightMenuToggle from './RightMenuToggle';
 import { useSelector } from 'react-redux';
+import TwoCards from './TwoCards';
 function MainPage() {
     const language=useSelector((state)=>state.language.value)
 
@@ -41,7 +42,8 @@ function MainPage() {
     {/* <!-- Services End --> */}
 
     {/* <!-- Courses Start --> */}
-    <div id="rs-courses" className="rs-courses sec-color sec-spacer">
+    <TwoCards/>
+    {/* <div id="rs-courses" className="rs-courses sec-color sec-spacer">
         <div className="container">
             <div className="sec-title mb-50 text-center">
                 <h2>{language.popularCourses}</h2>     
@@ -50,7 +52,7 @@ function MainPage() {
                     <CoursesSlideContainer/>
             </div>
         </div>
-    </div>
+    </div> */}
     {/* <!-- Courses End --> */}
     
     {/* <!-- Counter Up Section Start--> */}
