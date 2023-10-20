@@ -5,9 +5,11 @@ function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg}
     <div className={`preperation-card ${cardBgImg}`}>
 
         <h3 className='prepertaion-top'>{topText}</h3>
-        <p>{firstText}</p>
-        <p>{secondText}</p>
+<div className="qualp">
+<p>{firstText}</p>
+        <p>{secondText}</p> 
         <p>{thirdText}</p>
+</div>
         <div className="prepertaion-bottom">
             {btnText}
 <i class="fa fa-arrow-right" aria-hidden="true"></i>

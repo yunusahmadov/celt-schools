@@ -661,6 +661,35 @@ width: auto;
     .slider-student-card-top img{
         bottom: -20px ;
     } */
+    .qual-container{
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .qualify-card{
+        width: 100% ;
+        align-items: center ;
+      }
+      .qualify-card p{
+        margin: 0 ;
+        text-align: center;
+        font-size: 16px;
+      }
+      .qualify-card img{
+        width: 50%;
+      }
+      .qualify-card h2{
+        font-size:28px;
+      }
+      .whole-container{
+        flex-direction: column;
+        gap: 50px;
+      }
+      .preperation-card{
+        width: 100%;
+        padding: 8% 2%;
+      }
+
 
 
 }

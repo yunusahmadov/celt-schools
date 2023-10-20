@@ -13,6 +13,7 @@ import CountUpSection from './CountUpSection';
 import RightMenuToggle from './RightMenuToggle';
 import { useSelector } from 'react-redux';
 import TwoCards from './TwoCards';
+import QualifiedSection from './QualifiedSection';
 function MainPage() {
     const language=useSelector((state)=>state.language.value)
 
@@ -54,10 +55,7 @@ function MainPage() {
         </div>
     </div> */}
     {/* <!-- Courses End --> */}
-    
-    {/* <!-- Counter Up Section Start--> */}
-    {/* <CountUpSection/> */}
-    {/* <!-- Counter Down Section End --> */}
+    <QualifiedSection/>
 
     {/* <!-- Events Start --> */}
     <div id="rs-events" className="rs-events sec-spacer">
