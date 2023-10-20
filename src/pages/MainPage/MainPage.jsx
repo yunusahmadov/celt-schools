@@ -14,6 +14,10 @@ import RightMenuToggle from './RightMenuToggle';
 import { useSelector } from 'react-redux';
 import TwoCards from './TwoCards';
 import QualifiedSection from './QualifiedSection';
+import Cambridge from './Cambridge';
+import FlexibleSection from './FlexibleSection';
+import BroadSection from './BroadSection';
+import ApplySection from './ApplySection';
 function MainPage() {
     const language=useSelector((state)=>state.language.value)
 
@@ -33,6 +37,8 @@ function MainPage() {
 
     </div>
     {/* <!--Full width header End--> */}
+
+    <Cambridge/>
     
     {/* <!-- Slider Area Start --> */}
     <MainTopSlider/>
@@ -55,8 +61,11 @@ function MainPage() {
         </div>
     </div> */}
     {/* <!-- Courses End --> */}
-    <QualifiedSection/>
+    <QualifiedSection/> 
+    <FlexibleSection/>
+    <BroadSection/>
 
+    <ApplySection/>
     {/* <!-- Events Start --> */}
     <div id="rs-events" className="rs-events sec-spacer">
         <div className="container">
