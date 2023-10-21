@@ -8,7 +8,7 @@ function QualifiedSection() {
   return (
 <>
 <div className="sec-title mb-50 text-center">
-                <h2>TEST TEXT</h2>     
+                <h2>Niyə CELT High School?</h2>     
             </div>
 <div className='qualified'>
       
@@ -17,13 +17,13 @@ function QualifiedSection() {
           <div className="qual-container">
           <QualifyCard
               qualImg={img1}
-              qualTitle={'Highly qualified teachers'}
+              qualTitle={'Beynəlxalq dərəcəli müəllimlər'}
               qual1={'All our teachers are subject specialists.'}
               qual2={'Many hold a second degree or equivalent qualification, including PhD.'}
           />
              <QualifyCard
               qualImg={img2}
-              qualTitle={'Individual approach'}
+              qualTitle={'İndividual yanaşma'}
               qual1={'You will have regular personal progress testing and skills analysis.'}
               qual2={'Dedicated professional care and support teams are always available for help and advice.'}
               qual3={'We use the Cognitive Abilities Test (CAT 4) to assess your abilities, academic potential and learning preferences.'}
@@ -31,7 +31,7 @@ function QualifiedSection() {
           />
              <QualifyCard
               qualImg={img3}
-              qualTitle={'Very small classes'}
+              qualTitle={'VIP siniflər'}
               qual1={'All our teachers are subject specialists.'}
               qual2={'This means plenty of one-to-one contact with your teacher.'}
           />

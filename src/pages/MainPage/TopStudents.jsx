@@ -31,8 +31,12 @@ function TopStudents() {
     }, [studentState]);
 
     return (
-        <div className="container">
+        <div className="container stud">
+                    <div className="sec-title mb-50 text-center">
+                <h2>Məzunlarımız</h2>     
+            </div>
             <div className="student-container">
+                
             {
                 randStudents.map((data,i)=>(
                     <StudentCard key={i} data={data} />

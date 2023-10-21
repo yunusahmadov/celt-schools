@@ -198,7 +198,7 @@ function  ContactsSection() {
         }
         centerWebsite={"https://celt.az/celt-colleges-genclik/"}
       />
-            <ContactsCard
+            {/* <ContactsCard
         centerName={"CELT IT Xətai"}
         centerPhone1={"050 588 15 17"}
         centerPhone2={"012 496 45 76"}
@@ -211,8 +211,8 @@ function  ContactsSection() {
         }
         centerWebsite={"https://celtit.com/contact.html"}
 
-      />
-           
+      /> */}
+{/*            
     <ContactsCard
         centerName={"CELT IT İçərişəhər"}
         centerPhone1={"050 588 15 17"}
@@ -226,7 +226,7 @@ function  ContactsSection() {
         }
         centerWebsite={"https://celtit.com/contact.html"}
 
-      />
+      /> */}
     <ContactsCard
         centerName={"CELT Primary"}
         primaryText={"Nərimanov"}

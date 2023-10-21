@@ -7,32 +7,31 @@ function FlexibleSection() {
   return (
     <div className="flexible">
           <div className="container">
-            <h2>Flexible programme length</h2>
+            <h2>Proqramların bitirmə müddəti</h2>
             <div className="flexible-center">
 
                <div className="flexible-card">
                     <img src={img1} alt="" />
-                    <p>Standard <strong>two-year A-level</strong></p>
+                    <p>2 illik standard proqram</p>
                </div>
 
                <div className="flexible-card">
                <img src={img2} alt="" />
-                    <p><strong>One-year A-level: </strong>for students of
-exceptional academic ability.</p>
+                    <p> 1 illik sürətli proqram</p>
                 </div>
                 <div className="flexible-card">
                 <img src={plus} alt="" />
                 <p>
-                <strong>Extended A-level: </strong>for international students who need additional English language support before they can start the main programme.
+                 3 illik rahat proqram
                 </p>
          
                 </div>
             </div>
-            <p>You can also join the programme for just the final A2 year if you have completed the first year of A-levels or equivalent at another school.</p>
+            <p className='finala2'>You can also join the programme for just the final A2 year if you have completed the first year of A-levels or equivalent at another school.</p>
 
-            <button className='pinkbtn'>SEE PROGRAMME INFORMATION 
+            {/* <button className='pinkbtn'>SEE PROGRAMME INFORMATION 
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
+            </button> */}
         </div>
     </div>
   )

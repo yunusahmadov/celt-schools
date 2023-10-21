@@ -9806,6 +9806,7 @@ top: 230px !important;
   color: white;
   bottom: -20px;
   font-style: 28px;
+  cursor: pointer;
 }
 .qualified{
   background-color: #65306d;
@@ -9846,14 +9847,14 @@ display: flex;
 justify-content: center;
 }
 .qualtitle h2{
-font-size: 36px;
+font-size: 32px;
 margin: 0;
 
 
   width: 80%;
 font-weight: 700;
 color: white;
-font-family: BwDariusBold;
+/* font-family: BwDariusBold; */
 
 }
 
@@ -9959,9 +9960,9 @@ font-family: BwDariusBold;
 font-family: 'Raleway', sans-serif;
 text-align: start;
 }
-/* .flexible-card p{
-  max-width: 50%;
-} */
+.flexible-card p{
+  margin: 0;
+}
 .flexible-card img{
 
   width: 50px ;
@@ -10056,4 +10057,31 @@ height: 100%;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 
+}
+.diplomatxt{
+  display: flex;
+  flex-direction: column;
+}
+.diplomatxt h2{
+  margin-bottom: 0;
+  background-color: #e94a35;
+  font-family: 'Raleway', sans-serif;
+
+  padding: 5px 10px;
+  color: white;
+}
+.diplomatxt h3{
+margin: 0;
+padding: 5px 10px;
+color: #b1b2b2;
+font-family: 'Raleway', sans-serif;
+font-size: 20px;
+
+}
+.stud{
+  margin-top: 50px;
+}
+.finala2{
+  margin-top: 30px;
+  margin-bottom: 0;
 }
