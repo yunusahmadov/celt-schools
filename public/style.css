@@ -75,6 +75,12 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+@font-face { 
+  font-family: "BwDariusBold";
+  src: url("./fonts//BwDariusBold.ttf");
+  font-style: normal;
+}
 .rs-animation-fade {
   -webkit-animation-name: rs-fade;
   animation-name: rs-fade;
@@ -9128,20 +9134,22 @@ justify-content: space-between;
 }
 .wp-message,
 .page-check{
-  border: 1px solid #212121;
+
   padding: 5px 20px;
   border-radius:20px; 
   display: flex; 
   justify-content: center;
   align-items:center;
   gap: 5px;
-  border: 1px solid #ff3115;
+  border: 1px solid #1E398F;
   transition: .5;
 }
 .page-check{
   color: #1E398F;
   font-size: 14px;
   font-weight: 600;
+  /* border: 1px solid #ff3115; */
+
 }
 .wp-message{
   color: #23A455;
@@ -9158,7 +9166,6 @@ justify-content: space-between;
   fill: white;
 }
 .page-check{
-  border: 1px solid #ff3115;
   margin-top: 12px;
 }
 .page-check:hover{
@@ -9174,20 +9181,20 @@ justify-content: space-between;
   margin-top: 20px;
 }
 .center-icons i{
-  background-color: #ff3115;
-  color:white;
+  background-color:#d2dcfc;
+  color:#1E398F;
   border-radius: 50%;
   padding: 10px;
   transition: .2s;
-  border: 1px solid #ff3115;
+  border: 1px solid #d2dcfc;
   width: 35px;
   height: 35px;
 }
 .center-icons i:hover{
   transform: scale(1.15);
-  background-color: white;
-  color: #ff3115;
+  /* background-color: white; */
 }
+
 .main-top-slider{
   height: 90vh; 
 
@@ -9585,7 +9592,14 @@ nav{
 justify-content: space-between;
 flex-wrap: wrap;
 row-gap: 20px;
-padding: 0 12px;
+/* padding: 0 12px; */
+}
+.top-student-container{
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .student-card,
 .slider-student-card{
@@ -9773,6 +9787,10 @@ top: 230px !important;
   padding:10px 30px;
   color: white;
   font-size: 32px;
+  font-family: BwDariusBold;
+}
+.medical{
+  background-color: #252f38;  
 }
 .preperation-card p{
   color: white;
@@ -9829,21 +9847,26 @@ justify-content: center;
 }
 .qualtitle h2{
 font-size: 36px;
+margin: 0;
+
 
   width: 80%;
 font-weight: 700;
 color: white;
-font-family: 'Raleway', sans-serif;
+font-family: BwDariusBold;
 
 }
 
 .qualify-card p{
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
   text-align: left;
+
   }
   .qualp p {
     margin: 16px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
   }
   .qualbtn{
     background-color: #59c6e7;
@@ -9919,6 +9942,7 @@ font-family: 'Raleway', sans-serif;
 .flexible h2{
   color: white;
   font-size: 42px;
+  font-family: BwDariusBold;
 }
 .flexible-center{
   display: flex;
@@ -9960,10 +9984,12 @@ font-size: 14px;
 .broad-section,
 .apply-section{
   background-image: url('./images2/broad.jpg');
-  padding: 50px 0;
+  /* padding: 50px 0; */
   background-position: center;
   background-size: cover;
   color: white;
+  display: flex;
+  align-items: center;
 font-family: 'Raleway', sans-serif;
 height: 500px;
 }
@@ -9975,7 +10001,12 @@ height: 500px;
 .broad-section h2,
 .apply-section h2{
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: BwDariusBold;
+}
+
+.broad-section p,
+.apply-section p{
+font-size: 18px;
 }
 .overlay{
   background: rgba(0, 0, 0, 0.4);
@@ -9985,4 +10016,44 @@ height: 500px;
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.student-story-container{
+ display: flex;
+ flex-direction: column;
+ padding: 60px 0;
+ align-items: center;
+ gap: 30px;
+}
+.student-story{
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+}
+.student-story h3{
+  font-size: 32px;
+  font-family: BwDariusBold;
+
+}
+.student-story-left{
+max-width: 60%;
+max-height: 400px;
+}
+.student-story-left img{
+width: 100%;
+height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.student-story-right{
+  max-width: 35%;
+  text-align: center;
+}
+.student-story-right p{
+  margin-bottom: 0;
+  color: #65306d;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
 }

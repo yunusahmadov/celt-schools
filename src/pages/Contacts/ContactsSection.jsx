@@ -10,7 +10,7 @@ function  ContactsSection() {
     <h2>{language.trainingCenters}</h2>
     <div className="contact-card-section">
       <ContactsCard     
-        centerName={"CELT High School"}
+        centerName={"CELT High School Nərimanov Heykəli"}
         centerPhone1={"050 211 35 56"}
         centerPhone2={"012 505 34 34"}
         centerLocation={
@@ -284,7 +284,7 @@ function  ContactsSection() {
         centerInstagram={
           "https://www.instagram.com/celtpreschool_narimanov/ "
         }
-        centerWebsite={"https://celt.az/celt-kids-elmler-2/"}
+        centerWebsite={"https://celt.az/celt-hazi-aslanov/"}
 
       />
            <ContactsCard

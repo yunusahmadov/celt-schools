@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg}) {
+function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg,titleBg}) {
   return (
     <div className={`preperation-card ${cardBgImg}`}>
 
-        <h3 className='prepertaion-top'>{topText}</h3>
+        <h3 className={`prepertaion-top background ${titleBg}`}>{topText}</h3>
 <div className="qualp">
 <p>{firstText}</p>
         <p>{secondText}</p> 

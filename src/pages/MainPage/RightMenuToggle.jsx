@@ -47,6 +47,13 @@ const handleLanguageChange = (newLanguage) => {
           break;
   }
 };
+const hrefs = [
+  "/",
+  "/courses",
+  "/graduates",
+  "/contacts ",
+  "/events",
+];
 
   return (
     <nav className="right_menu_togle" style={menuOpened?{right:"0px"}:{right:"-23rem"}}>
@@ -61,26 +68,36 @@ const handleLanguageChange = (newLanguage) => {
         </a>
       </div>
       <ul className="sidebarnav_menu list-unstyled main-menu">
-        <li className="current-menu-item menu-item-has-children">
+        {
+          language.nav.map((item,i)=>(
+            <li className="current-menu-item menu-item-has-children">
+            <a href={hrefs[i]} >   {item}
+            <span className="icon"></span></a>
+          </li>
+          ))
+        }
+        {/* <li className="current-menu-item menu-item-has-children">
           <a href="/">Home
           <span className="icon"></span></a>
         </li>
-
-
-        <li className="menu-item-has-children">
-          <a href="/courses">Courses
+        <li className="current-menu-item menu-item-has-children">
+          <a href="/courses">Fields
           <span className="icon"></span></a>
         </li>
-
         <li className="menu-item-has-children">
-          <a href="/events">Events
+          <a href="/graduates">Students
           <span className="icon"></span></a>
         </li>
         <li>
           <a href="/contacts">
-            Contact<span className="icon"></span>
+          Campus Addresses<span className="icon"></span>
           </a>
         </li>
+        <li className="menu-item-has-children">
+          <a href="/events">Events
+          <span className="icon"></span></a>
+        </li> */}
+
         <li>
           <div className="flags-img">
             

@@ -18,6 +18,8 @@ import Cambridge from './Cambridge';
 import FlexibleSection from './FlexibleSection';
 import BroadSection from './BroadSection';
 import ApplySection from './ApplySection';
+import TopStudents from './TopStudents';
+import StudentStory from './StudentStory';
 function MainPage() {
     const language=useSelector((state)=>state.language.value)
 
@@ -41,7 +43,8 @@ function MainPage() {
     <Cambridge/>
     
     {/* <!-- Slider Area Start --> */}
-    <MainTopSlider/>
+    {/* <MainTopSlider/> */}
+    <TopStudents/>
     {/* <!-- Slider Area End --> */}
     
     {/* <!-- Services Start --> */}
@@ -64,7 +67,7 @@ function MainPage() {
     <QualifiedSection/> 
     <FlexibleSection/>
     <BroadSection/>
-
+    <StudentStory/>
     <ApplySection/>
     {/* <!-- Events Start --> */}
     <div id="rs-events" className="rs-events sec-spacer">
