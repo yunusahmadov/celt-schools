@@ -9088,7 +9088,7 @@ ul {
 /* border: 2px solid black; */
 padding: 10px 20px;
 box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-width: 350px;
+width: 385px;
 height: 450px;
 display: flex;
 flex-direction: column;
@@ -10084,4 +10084,12 @@ font-size: 20px;
 .finala2{
   margin-top: 30px;
   margin-bottom: 0;
+}
+.btn-tabs{
+  margin: 40px 0;
+}
+.btn-tabs button{
+  border: none;
+  padding: 10px 15px;
+  
 }

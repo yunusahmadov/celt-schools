@@ -1,26 +1,131 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactsCard from './ContactsCard'
 import { useSelector } from 'react-redux'
 
 function  ContactsSection() {
   const language=useSelector((state)=>state.language.value)
+  const [showPrimary,setShowPrimary]=useState(false)
+  
 
   return (
     <div className="contact-section">
     <h2>{language.trainingCenters}</h2>
+    <div className="btn-tabs">
+      <button  onClick={()=>setShowPrimary(false)}>Beynəlxalq Orta Məktəb</button>
+      <button onClick={()=>setShowPrimary(true)}>Beynəlxalq İbtidai Siniflər</button>
+
+    </div>
     <div className="contact-card-section">
-      <ContactsCard     
-        centerName={"CELT High School Nərimanov Heykəli"}
-        centerPhone1={"050 211 35 56"}
-        centerPhone2={"012 505 34 34"}
+      {
+        showPrimary?
+        <>
+             <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Nərimanov"}
+        centerPhone1={"070 596 04 51"}
+        centerPhone2={"012 408 43 20"}
         centerLocation={
-          "https://www.google.com/maps/place/CELT+High+School/@40.3694089,49.8276876,19.3z/data=!4m5!3m4!1s0x0:0x8624d4910168579!8m2!3d40.3694055!4d49.8278814?coh=164777&entry=tt&shorturl=1"
+          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
         }
-        centerFacebook={"https://www.facebook.com/celtschool"}
-        centerInstagram={"https://www.instagram.com/celt.high.school/"}
-        centerWebsite={"https://celt.az/celt-high-school-3/"}
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschool_narimanov/ "
+        }
+        centerWebsite={"https://celt.az/celt-kids-narimanov-2/"}
+        
       />
-      <ContactsCard
+                      <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Elmlər"}
+        centerPhone1={"070 686 80 67"}
+        centerPhone2={"012 538 38 33"}
+        centerLocation={
+          "https://www.google.com/maps/place/40%C2%B022'20.1%22N+49%C2%B049'11.0%22E/@40.3722572,49.817544,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x341a368292a84e61!8m2!3d40.3722572!4d49.8197327?hl=tr&shorturl=1"
+        }
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschoolelmler"
+        }
+        centerWebsite={"https://celt.az/celt-kids-elmler-2/"}
+
+      />
+              <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Sahil"}
+        centerPhone1={"070 629 32 42"}
+        centerPhone2={"012 598 10 30"}
+        centerLocation={
+          "https://www.google.com/maps/place/CELT+Elementary+School+Sahil/@40.374947,49.840019,17z/data=!3m1!4b1!4m6!3m5!1s0x40307dc851001947:0x623842e35ff0f0da!8m2!3d40.3749429!4d49.8425939!16s%2Fg%2F11h008my1r?entry=ttu"
+        }
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschool_sahil"
+        }
+        centerWebsite={"https://celt.az/celt-kids-sahil/"}
+
+      />
+        <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Həzi"}
+        centerPhone1={"050 611 91 00"}
+        centerPhone2={"012 599 57 57"}
+        centerLocation={
+          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
+        }
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschool_narimanov/ "
+        }
+        centerWebsite={"https://celt.az/celt-hazi-aslanov/"}
+
+      />
+           <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Xətai"}
+        centerPhone1={"050 588 15 18"}
+        centerPhone2={"012 496 45 76"}
+        centerLocation={
+          "https://www.google.com/maps/place/CELT+Colleges+Xetai+-+%C4%B0ngilis+dili+kurslari/@40.3817981,49.8639911,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1b3e601b49:0xb923a92b9b1a3639!8m2!3d40.381794!4d49.866566!16s%2Fg%2F11clyfsqpd?entry=ttu"
+        }
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschool_sahil/ "
+        }
+        centerWebsite={"https://celt.az/celt-khatai/"}
+      />
+           <ContactsCard
+        centerName={"CELT Primary"}
+        primaryText={"Sumqayıt  "}
+        centerPhone1={"050 611 91 00"}
+        centerPhone2={"012 599 57 57"}
+        centerLocation={
+          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
+        }
+        centerFacebook={"https://www.facebook.com/celtscollege/"}
+        centerInstagram={
+          "https://www.instagram.com/celtpreschool_narimanov/ "
+        }
+        centerWebsite={"https://celt.az/celt-kids-sumqayit/"}
+
+      />
+        </>
+   
+      
+      :    
+      <>
+      <ContactsCard     
+      centerName={"CELT High School Nərimanov Heykəli"}
+      centerPhone1={"050 211 35 56"}
+      centerPhone2={"012 505 34 34"}
+      centerLocation={
+        "https://www.google.com/maps/place/CELT+High+School/@40.3694089,49.8276876,19.3z/data=!4m5!3m4!1s0x0:0x8624d4910168579!8m2!3d40.3694055!4d49.8278814?coh=164777&entry=tt&shorturl=1"
+      }
+      centerFacebook={"https://www.facebook.com/celtschool"}
+      centerInstagram={"https://www.instagram.com/celt.high.school/"}
+      centerWebsite={"https://celt.az/celt-high-school-3/"}
+    />
+
+<ContactsCard
         centerName={"CELT İçəri Şəhər"}
         centerPhone1={"050 555 83 86"}
         centerPhone2={"012 492 68 53"}
@@ -198,6 +303,12 @@ function  ContactsSection() {
         }
         centerWebsite={"https://celt.az/celt-colleges-genclik/"}
       />
+      
+      </>
+
+      }
+  
+     
             {/* <ContactsCard
         centerName={"CELT IT Xətai"}
         centerPhone1={"050 588 15 17"}
@@ -227,95 +338,8 @@ function  ContactsSection() {
         centerWebsite={"https://celtit.com/contact.html"}
 
       /> */}
-    <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Nərimanov"}
-        centerPhone1={"070 596 04 51"}
-        centerPhone2={"012 408 43 20"}
-        centerLocation={
-          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschool_narimanov/ "
-        }
-        centerWebsite={"https://celt.az/celt-kids-narimanov-2/"}
-        
-      />
-              <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Elmlər"}
-        centerPhone1={"070 686 80 67"}
-        centerPhone2={"012 538 38 33"}
-        centerLocation={
-          "https://www.google.com/maps/place/40%C2%B022'20.1%22N+49%C2%B049'11.0%22E/@40.3722572,49.817544,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x341a368292a84e61!8m2!3d40.3722572!4d49.8197327?hl=tr&shorturl=1"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschoolelmler"
-        }
-        centerWebsite={"https://celt.az/celt-kids-elmler-2/"}
+   
 
-      />
-              <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Sahil"}
-        centerPhone1={"070 629 32 42"}
-        centerPhone2={"012 598 10 30"}
-        centerLocation={
-          "https://www.google.com/maps/place/CELT+Elementary+School+Sahil/@40.374947,49.840019,17z/data=!3m1!4b1!4m6!3m5!1s0x40307dc851001947:0x623842e35ff0f0da!8m2!3d40.3749429!4d49.8425939!16s%2Fg%2F11h008my1r?entry=ttu"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschool_sahil"
-        }
-        centerWebsite={"https://celt.az/celt-kids-sahil/"}
-
-      />
-        <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Həzi"}
-        centerPhone1={"050 611 91 00"}
-        centerPhone2={"012 599 57 57"}
-        centerLocation={
-          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschool_narimanov/ "
-        }
-        centerWebsite={"https://celt.az/celt-hazi-aslanov/"}
-
-      />
-           <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Xətai"}
-        centerPhone1={"050 588 15 18"}
-        centerPhone2={"012 496 45 76"}
-        centerLocation={
-          "https://www.google.com/maps/place/CELT+Colleges+Xetai+-+%C4%B0ngilis+dili+kurslari/@40.3817981,49.8639911,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1b3e601b49:0xb923a92b9b1a3639!8m2!3d40.381794!4d49.866566!16s%2Fg%2F11clyfsqpd?entry=ttu"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschool_sahil/ "
-        }
-        centerWebsite={"https://celt.az/celt-khatai/"}
-      />
-           <ContactsCard
-        centerName={"CELT Primary"}
-        primaryText={"Sumqayıt  "}
-        centerPhone1={"050 611 91 00"}
-        centerPhone2={"012 599 57 57"}
-        centerLocation={
-          "https://www.google.com/maps/place/CELT+Elementary+School+Narimanov/@40.3976339,49.871862,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d1dfd6ad23f:0x621c393508322aab!8m2!3d40.3976339!4d49.871862!16s%2Fg%2F11g1pp28rt?entry=ttu"
-        }
-        centerFacebook={"https://www.facebook.com/celtscollege/"}
-        centerInstagram={
-          "https://www.instagram.com/celtpreschool_narimanov/ "
-        }
-        centerWebsite={"https://celt.az/celt-kids-sumqayit/"}
-
-      />
     </div>
 
   </div>
