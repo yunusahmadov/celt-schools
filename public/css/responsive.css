@@ -223,6 +223,9 @@
         max-width: 100%;
         gap: 10px;
       }
+      .student-story h3{
+        font-size: 28px;
+      }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -672,6 +675,9 @@ width: auto;
         width: 100% ;
         align-items: center ;
       }
+      .qualify-card:nth-child(3){
+        margin-top: 20px;
+      }
       .qualify-card p{
         margin: 0 ;
         text-align: center;
@@ -704,6 +710,18 @@ width: auto;
       }
       .camb-logo{
         width: 40%;
+      }
+      .student-story{
+        max-width: 100%;
+      }
+      .student-story h3{
+        font-size: 24px;
+      }
+      .student-story-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
       }
 
 
@@ -1087,6 +1105,8 @@ width: auto;
     }
     .flexible-center{
         flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
         
       }
       .flexible-card{
@@ -1098,6 +1118,18 @@ width: auto;
         padding: 0;
         height: 50px;
 
+      }
+      .flexible-card p{
+        margin: 0;
+      }
+      .student-story{
+        flex-direction: column;
+      }
+      .student-story-right{
+        max-width: 100%;
+      }
+      .student-story-left{
+        margin: 0 auto;
       }
 }
 @media only screen and (max-width: 700px) {
@@ -1239,6 +1271,9 @@ height: 258px;
     .rs-banner-section2 .banner-inner .sl-sub-title {
         font-size: 18px;
     }
+    .student-story-right h3{
+        font-size: 20px;
+      }
 }
 
 /* Small Device : 480px. */
@@ -1431,11 +1466,19 @@ height: 258px;
     .rs-team-2 .col-xs-6{
         width: 100%;
     }
+    .prepertaion-top{
+        font-size: 26px;
+        left: 0px;
+    }
+    .preperation-card {
+        padding: 10% 2%;
+    }
 }
 @media only screen and (max-width: 330px) {
 	.cambridge-right h3{
         font-size: 17px;
     }
+
 }
 /* Extra Small Device : 320px. */
 @media only screen and (max-width: 320px) {

@@ -71,11 +71,6 @@ function MainMenu() {
             <ul
               className="top-ul"
             >
-
-                {/* <a href="" className="sticky-logo">
-                <img src="images/logo.png" alt="logo"/>
-
-                </a> */}
               {language.nav.map((item, i) => (
                 <li
                   key={i}
