@@ -2,9 +2,12 @@ import React from 'react'
 import cambridge from '../../images/cambridgeimg.jpg'
 import cambridge2 from '../../images/ceq-logo-stacked.png'
 import leftarrow from '../../images/left-arrow-white.png'
+import { useNavigate } from 'react-router-dom'
 
 
 function Cambridge() {
+
+    const navigate=useNavigate();
   return (
    <div className="container">
     <div className="cambridge-cont">
@@ -12,11 +15,17 @@ function Cambridge() {
             <img src={cambridge} alt="" />
         </div>
         <div className="cambridge-right">
-            <img className='camb-logo' src={cambridge2} alt="" />
-            <h3>Your path to learning English, step by step</h3>
-            <p>Cambridge English Qualifications are in-depth exams that make learning English enjoyable, effective and rewarding. Our unique approach encourages continuous progression with a clear path to improve language skills. We have qualifications for schools, general and higher education, and business.</p>
-            <button>Learn more
-                <img className='leftarrow' src={leftarrow} alt="" />            </button>
+            <div className='diplomatxt'>
+                <h2>CELT High School</h2>
+                <h3>A Level Diploma</h3>
+            </div>
+            {/* <img className='camb-logo' src={cambridge2} alt="" /> */}
+            <h3>Dünyanın ən güclü universitetlərinə gedən yol</h3>
+            <p>CELT A Level diplomu ilə siz dünyanın ən güclü uniersitetlərinə asan qəbul ola və təhsil ala bilərsiniz. Bizim individual yanaşmamız, sizin bütün sahələrdə uğurlu nəticələr əldə etmənizə zəmanət verir. 
+Siz CELT məktəblərində övladlarınızı dünya standardlarına uyğun yetişdirə bilərsiniz.</p>
+            <button onClick={()=>navigate('/contacts')}>Uğura aparan yolu seçin
+                <img className='leftarrow' src={leftarrow} alt="" /> 
+             </button>
             </div>
             
     </div>

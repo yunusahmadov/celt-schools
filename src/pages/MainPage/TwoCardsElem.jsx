@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg,titleBg}) {
+
+        const navigate=useNavigate();
   return (
     <div className={`preperation-card ${cardBgImg}`}>
 
@@ -10,7 +13,7 @@ function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg,
         <p>{secondText}</p> 
         <p>{thirdText}</p>
 </div>
-        <div className="prepertaion-bottom">
+        <div className="prepertaion-bottom" onClick={()=>navigate('/contacts')}>
             {btnText}
 <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
