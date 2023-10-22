@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700'); */
 /* @charset "utf-8"; */
 /**
 *
@@ -86,6 +86,13 @@
   font-family: "Raleway";
   src: url("./fonts/raleway/static/Raleway-Bold.ttf");
 }
+@font-face { 
+                
+  font-family: "Roboto Condensed";
+  src: url("./fonts/robotoCondenced/RobotoCondensed-VariableFont_wght.ttf");
+}
+
+
 .rs-animation-fade {
   -webkit-animation-name: rs-fade;
   animation-name: rs-fade;
@@ -455,7 +462,7 @@ img {
   height: auto;
 }
 p {
-  margin: 0 0 26px;
+  margin: 0 0 26px; 
 }
 h1,
 h2,
@@ -10121,3 +10128,4 @@ font-size: 20px;
 .home1 .sec-spacer{
   padding: 0  ;
 }
+
