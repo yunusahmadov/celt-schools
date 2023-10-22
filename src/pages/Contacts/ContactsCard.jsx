@@ -39,7 +39,7 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
     />
   </svg>
           </a>
-        <a className='page-check' href={`${centerWebsite}`}>{language.seePage}</a>
+        {/* <a className='page-check' href={`${centerWebsite}`}>{language.seePage}</a> */}
       <div className="center-icons">
         <a href={centerLocation}>
           <i class="fa fa-map-marker"></i>

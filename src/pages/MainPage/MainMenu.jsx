@@ -34,7 +34,7 @@ function MainMenu() {
     const header = document.querySelector(".rs-header");
     if (window.scrollY > 200) {
       header.classList.add("rs-header-sticky");
-    } else {
+    } else if(window.scrollY == 0){
       header.classList.remove("rs-header-sticky");
     }
   };
