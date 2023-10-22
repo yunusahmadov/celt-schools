@@ -11,8 +11,8 @@ function  ContactsSection() {
     <div className="contact-section">
     <h2>{language.trainingCenters}</h2>
     <div className="btn-tabs">
-      <button  onClick={()=>setShowPrimary(false)}>Beynəlxalq Orta Məktəb</button>
-      <button onClick={()=>setShowPrimary(true)}>Beynəlxalq İbtidai Siniflər</button>
+      <button className={`${showPrimary?'inactive-tab':'active-tab'}`}  onClick={()=>setShowPrimary(false)}>Beynəlxalq Orta Məktəb</button>
+      <button className={`${showPrimary?'active-tab':'inactive-tab'}`} onClick={()=>setShowPrimary(true)}>Beynəlxalq İbtidai Siniflər</button>
 
     </div>
     <div className="contact-card-section">
