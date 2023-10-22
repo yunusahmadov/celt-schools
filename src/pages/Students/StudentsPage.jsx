@@ -34,7 +34,7 @@ function StudentsPage() {
     console.log(studentState.length);
     const language=useSelector((state=>state.language.value))
   return (
-    <body class="home1">
+    <body className="home1">
     {/* <Preloader/> */}
       <div className="full-width-header">
 		<Header/>
@@ -75,19 +75,19 @@ function StudentsPage() {
 
     {/* <!-- start scrollUp  --> */}
     <div id="scrollUp">
-        <i class="fa fa-angle-up"></i>
+        <i className="fa fa-angle-up"></i>
     </div>
     
-    <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="fa fa-close"></span>
+    <div aria-hidden="true" className="modal fade search-modal" role="dialog" tabindex="-1">
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" className="fa fa-close"></span>
         </button>
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="search-block clearfix">
+        <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+                <div className="search-block clearfix">
                     <form>
-                        <div class="form-group">
-                            <input class="form-control" placeholder="eg: Computer Technology" type="text"/>
+                        <div className="form-group">
+                            <input className="form-control" placeholder="eg: Computer Technology" type="text"/>
                         </div>
                     </form>
                 </div>

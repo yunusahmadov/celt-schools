@@ -15,11 +15,11 @@ function Contacts() {
   const language=useSelector((state=>state.language.value))
 
   return (
-    <body class="home1">
+    <body className="home1">
       {/* <Preloader/> */}
 
       {/* <!--Full width header Start--> */}
-      <div class="full-width-header">
+      <div className="full-width-header">
         {/* <!-- Toolbar Start --> */}
         {/* <!-- Toolbar End --> */}
 
@@ -46,7 +46,7 @@ function Contacts() {
 
       {/* <!-- start scrollUp  --> */}
       <div id="scrollUp">
-        <i class="fa fa-angle-up"></i>
+        <i className="fa fa-angle-up"></i>
       </div>
     </body>
   );
@@ -54,27 +54,3 @@ function Contacts() {
 
 export default Contacts;
 
-{
-  /* <!-- Search Modal Start --> */
-}
-{
-  /* <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
-        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true" class="fa fa-close"></span>
-	        </button>
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="search-block clearfix">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="eg: Computer Technology" type="text"/>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> */
-}
-{
-  /* <!-- Search Modal End --> */
-}

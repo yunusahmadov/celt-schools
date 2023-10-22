@@ -29,9 +29,6 @@ function FlexibleSection() {
             </div>
             <p className='finala2'>You can also join the programme for just the final A2 year if you have completed the first year of A-levels or equivalent at another school.</p>
 
-            {/* <button className='pinkbtn'>SEE PROGRAMME INFORMATION 
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button> */}
         </div>
     </div>
   )

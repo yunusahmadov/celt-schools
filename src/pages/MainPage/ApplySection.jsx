@@ -10,7 +10,7 @@ function ApplySection() {
         <p>We offer a wide range of subjects across sciences, arts and humanities.</p>
         <p>If you meet our entry requirements and criteria, we will confirm your offer within 48 hours.</p>
         <button className='pinkbtn'>CONTACT US 
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
     </div>
 

@@ -13,13 +13,13 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
       <span>{primaryText}</span>
       <h3>{language.call}</h3>
       <p>
-        <i class="fa fa-mobile"></i>
+        <i className="fa fa-mobile"></i>
         <a href={`tel:${centerPhone1}`}>
         {centerPhone1}
         </a>
       </p>
       <p>
-        <i class="fa fa-phone"></i>
+        <i className="fa fa-phone"></i>
         <a href={`tel:${centerPhone2}`}>
         {centerPhone2}
         </a>
@@ -42,13 +42,13 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
         {/* <a className='page-check' href={`${centerWebsite}`}>{language.seePage}</a> */}
       <div className="center-icons">
         <a href={centerLocation}>
-          <i class="fa fa-map-marker"></i>
+          <i className="fa fa-map-marker"></i>
         </a>
         <a href={centerFacebook}>
-          <i class="fa fa-facebook"></i>
+          <i className="fa fa-facebook"></i>
         </a>
         <a href={centerInstagram}>
-          <i class="fa fa-instagram"></i>
+          <i className="fa fa-instagram"></i>
         </a>
       </div>
     </div>

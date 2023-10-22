@@ -27,7 +27,7 @@ function RightMenuToggle() {
                     dispatch(changeToAz());
                     setSelectedLanguage('AZ ')
     }else{
-        console.log('he');
+        // console.log('he');
     }
 }, [selectedLanguage]);
 
@@ -70,7 +70,7 @@ const hrefs = [
       <ul className="sidebarnav_menu list-unstyled main-menu">
         {
           language.nav.map((item,i)=>(
-            <li className="current-menu-item menu-item-has-children">
+            <li key={i} className="current-menu-item menu-item-has-children">
             <a href={hrefs[i]} >   {item}
             <span className="icon"></span></a>
           </li>

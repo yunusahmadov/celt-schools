@@ -15,7 +15,7 @@ function TwoCardsElem({topText,firstText,secondText,thirdText,btnText,cardBgImg,
 </div>
         <div className="prepertaion-bottom" onClick={()=>navigate('/contacts')}>
             {btnText}
-<i class="fa fa-arrow-right" aria-hidden="true"></i>
+<i className="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
   )
