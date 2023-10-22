@@ -5,27 +5,27 @@ function CoursSlideElem({courseImage,courseValue,courseCategory,courseDate,cours
     const language=useSelector((state)=>state.language.value)
 
   return (
-    <div class="course-item">
-    <div class="course-img">
+    <div className="course-item">
+    <div className="course-img">
     <img src={courseImage} alt="" />
-        {/* <span class="course-value">{courseValue}</span> */}
-        <div class="course-toolbar">
-            <h4 class="course-category"><a href="#">{courseCategory}</a></h4>
+        {/* <span className="course-value">{courseValue}</span> */}
+        <div className="course-toolbar">
+            <h4 className="course-category"><a href="#">{courseCategory}</a></h4>
         </div>
     </div>
-    <div class="course-body">
-        <div class="course-desc">
-            <h4 class="course-title"><a href="courses-details.html">{courseDetails}</a></h4>
+    <div className="course-body">
+        <div className="course-desc">
+            <h4 className="course-title"><a href="courses-details.html">{courseDetails}</a></h4>
             <p>
              {courseDescription}
             </p>
         </div>
     </div>
-    <div class="course-footer">
-        <div class="course-seats">
-            {/* <i class="fa fa-users"></i> 70 SEATS */}
+    <div className="course-footer">
+        <div className="course-seats">
+            {/* <i className="fa fa-users"></i> 70 SEATS */}
         </div>
-        <div class="course-button">
+        <div className="course-button">
             <a href="/contacts">{language.applyBtn}</a>
         </div>
     </div>

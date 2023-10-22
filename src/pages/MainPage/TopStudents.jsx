@@ -10,7 +10,7 @@ function TopStudents() {
         axios.get('https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/high-sch-accepted-students?page=1')
             .then(resp => {
                 setStudentState(resp.data);
-                console.log(resp.data);
+                // console.log(resp.data);
             });
     }, []);
 
@@ -22,7 +22,7 @@ function TopStudents() {
                 const randomStudent = studentState[randomIndex];
                 if (!randomStudents.includes(randomStudent)) {
                     randomStudents.push(randomStudent);
-                    console.log(randomIndex);
+                    // console.log(randomIndex);
 
                 }
             }

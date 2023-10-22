@@ -15,7 +15,7 @@ function StudentStory() {
             </div>
         </div>
         <button className='pinkbtn'>SEE ALL STUDENT STORIES 
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
       </div>
     </div>

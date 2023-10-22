@@ -17,7 +17,7 @@ const language=useSelector((state)=>state.language.value)
 
     {
       language.courseCard.map((item,i)=>{
-       return<div class="col-lg-4 col-md-6 grid-item ">
+       return<div className="col-lg-4 col-md-6 grid-item ">
 
        <CoursesCard
         key={i}

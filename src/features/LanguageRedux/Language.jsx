@@ -22,7 +22,7 @@ function Language() {
                         dispatch(changeToAz());
                         setSelectedLanguage('AZ ')
         }else{
-            console.log('he');
+            // console.log('he');
         }
     }, [selectedLanguage]);
 
