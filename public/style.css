@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700');
-@charset "utf-8";
+/* @charset "utf-8"; */
 /**
 *
 * -----------------------------------------------------------------------------
@@ -80,6 +80,11 @@
   font-family: "BwDariusBold";
   src: url("./fonts//BwDariusBold.ttf");
   font-style: normal;
+}
+
+@font-face { 
+  font-family: "Raleway";
+  src: url("./fonts/raleway/static/Raleway-Bold.ttf");
 }
 .rs-animation-fade {
   -webkit-animation-name: rs-fade;
@@ -9908,7 +9913,7 @@ color: white;
     align-items: start;
     justify-content: end;
     /* margin-top: 50px; */
-    font-family: 'Source Sans 3', sans-serif;
+    /* font-family: 'Source Sans 3', sans-serif; */
   }
   .cambridge-right button{
     background-color:#333;
