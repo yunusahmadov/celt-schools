@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 
-function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,centerFacebook,centerInstagram,primaryText,centerWebsite}) {
+function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,centerFacebook,centerInstagram,primaryText,centerWebsite,centerName2}) {
   
   let cut=centerPhone1.replaceAll(' ', '').substring(1)
   const language=useSelector((state)=>state.language.value)
@@ -10,6 +10,9 @@ function ContactsCard({centerName,centerPhone1,centerPhone2,centerLocation,cente
   return (
     <div className="contact-card">
       <h2>{centerName}</h2>
+      <h2>{centerName2}</h2>
+
+      <br />
       <span>{primaryText}</span>
       <h3>{language.call}</h3>
       <p>

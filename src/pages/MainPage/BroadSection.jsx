@@ -8,10 +8,11 @@ function BroadSection() {
     <div className='broad-section'>
       <div className="container">
         <h2>Geniş fənn seçimi</h2>
-        <p>Follow your passion.</p>
-        <p>We offer a wide range of subjects across sciences, arts and humanities.</p>
-        <p>We will help you decide on the ones which are best for your intended degree.</p>
-        <button onClick={() => navigate('/fields')} className='pinkbtn'>
+        <p>Sevdiyiniz sahəni oxuyun.</p>
+        <p>Biz iqtisadiyyat, dəqiq elmlər, mühəndislik, tibb və hümanitar sahələr üzrə fənlər tədris edirik.
+We offer a wide range of subjects across sciences, arts and humanities.</p>
+        <p>Nəzərdə tutulan dərəcəniz üçün ən uyğun olanları seçməyinizə kömək edəcəyik.</p>
+        <button onClick={() => navigate('/courses')} className='pinkbtn'>
           İxtisasınıza uyğun fənnlərə baxın
           <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>

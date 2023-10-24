@@ -58,7 +58,6 @@ function MainMenu() {
     "/courses",
     "/graduates",
     "/contacts ",
-    "/events",
   ];
 
   return (

@@ -18,23 +18,24 @@ function QualifiedSection() {
           <QualifyCard
               qualImg={img1}
               qualTitle={'Beynəlxalq dərəcəli müəllimlər'}
-              qual1={'All our teachers are subject specialists.'}
-              qual2={'Many hold a second degree or equivalent qualification, including PhD.'}
+              qual1={'Müəllimlərimizin ixtisas üzrə dərəcələri var.'}
+              qual2={'Müəllimlərin hədəfi tələbəni məqsədinə çatdırmaqdır.'}
+              qual3={'Müəllim hamısı yalnız ingilis dilində tədris edir.'}
+
           />
              <QualifyCard
               qualImg={img2}
               qualTitle={'İndividual yanaşma'}
-              qual1={'You will have regular personal progress testing and skills analysis.'}
-              qual2={'Dedicated professional care and support teams are always available for help and advice.'}
-              qual3={'We use the Cognitive Abilities Test (CAT 4) to assess your abilities, academic potential and learning preferences.'}
-              qualButton={'MORE ON THE CAT 4 TEST'}
+              qual1={'Hər bir tələbəmizin hər dərsi raporlarnır və baş müəllimlər tərəfindən təhlil edilir.'}
+              qual2={'Rəhbərlərimiz hər zaman tələbələrimizə xüsusi diqqət ayıraraq onların davamlı və disiplinli oxumasına kömək edir.'}
+              qual3={'Tələbələrimiz hər mövzunu öyrəndikcə həm praktiki imtahanlar verirlər həm də hər mövzunun sonunda ona aid tam imtahan verirlər. Bu da bizə uğurla nəticəyə doğru etibarlı şəkildə addımlamağa icazə verir.'}
+              // qualButton={'MORE ON THE CAT 4 TEST'}
           />
              <QualifyCard
               qualImg={img3}
               qualTitle={'VIP siniflər'}
-              qual1={'All our teachers are subject specialists.'}
-              qual2={'This means plenty of one-to-one contact with your teacher.'}
-          />
+              qual1={'Siniflərimiz VIP formatındadır. Hər sinifdə 2-3 tələbə olur. Müəllim bütün diqqətini tələbələrinin problemlərinin həll olunmasına ayrırı. Bu da daha yaxşı nəticələrə gətirirb çıxarır.'}
+            />
           </div>
       </div>
   </div>

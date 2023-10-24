@@ -27,7 +27,7 @@ function FlexibleSection() {
          
                 </div>
             </div>
-            <p className='finala2'>You can also join the programme for just the final A2 year if you have completed the first year of A-levels or equivalent at another school.</p>
+            <p className='finala2'>Əgər başqa məktəbdə A level səviyyəli və ya ekvivalentinin birinci ilini bitirmisinizsə, yalnız son A2 ili üçün proqrama qoşula bilərsiniz.</p>
 
         </div>
     </div>

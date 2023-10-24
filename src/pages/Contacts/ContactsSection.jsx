@@ -114,7 +114,9 @@ function  ContactsSection() {
       :    
       <>
       <ContactsCard     
-      centerName={"CELT High School Nərimanov Heykəli"}
+      centerName={"CELT High School"}
+      centerName2={"Nərimanov Heykəli"}
+
       centerPhone1={"050 211 35 56"}
       centerPhone2={"012 505 34 34"}
       centerLocation={
@@ -126,7 +128,9 @@ function  ContactsSection() {
     />
 
 <ContactsCard
-        centerName={"CELT İçəri Şəhər"}
+        centerName={"CELT High School"}
+        centerName2={"İçəri Şəhər"}
+
         centerPhone1={"050 555 83 86"}
         centerPhone2={"012 492 68 53"}
         centerLocation={
@@ -140,7 +144,9 @@ function  ContactsSection() {
 
       />
       <ContactsCard
-        centerName={"CELT 28 May"}
+        centerName={"CELT High School"}
+        centerName2={"28 May"}
+
         centerPhone1={"050 805 11 12"}
         centerPhone2={"012 441 36 65"}
         centerLocation={
@@ -151,7 +157,9 @@ function  ContactsSection() {
         centerWebsite={"https://celt.az/celt-colleges-28-may/"}
       />
       <ContactsCard
-        centerName={"CELT Nərimanov"}
+        centerName={"CELT High School"}
+        centerName2={"Nərimanov"}
+
         centerPhone1={"070 270 70 90"}
         centerPhone2={"012 566 48 23"}
         centerLocation={
@@ -165,7 +173,9 @@ function  ContactsSection() {
 
       />
       <ContactsCard
-        centerName={"CELT İnqilab"}
+        centerName={"CELT High School "}
+        centerName2={"İnqilab"}
+
         centerPhone1={"050 211 45 27"}
         centerPhone2={"012 564 69 40"}
         centerLocation={
@@ -179,7 +189,8 @@ function  ContactsSection() {
 
       />
       <ContactsCard
-        centerName={"CELT Xətai"}
+        centerName={"CELT High School"}
+        centerName2={"Xətai"}
         centerPhone1={"050 588 15 18"}
         centerPhone2={"012 496 45 76"}
         centerLocation={
@@ -193,7 +204,8 @@ function  ContactsSection() {
 
       />
         <ContactsCard
-        centerName={"CELT Sahil"}
+        centerName={"CELT High School"}
+        centerName2={"Sahil"}
         centerPhone1={"055 463 43 26"}
         centerPhone2={"012 493 48 18"}
         centerLocation={
@@ -207,7 +219,8 @@ function  ContactsSection() {
 
       />
           <ContactsCard
-        centerName={"CELT Elmlər"}
+        centerName={"CELT High School"}
+        centerName2={"Elmlər"}
         centerPhone1={"055 737 83 06"}
         centerPhone2={"012 538 38 53"}
         centerLocation={
@@ -220,7 +233,9 @@ function  ContactsSection() {
         centerWebsite={"https://celt.az/celt-colleges-elmler/"}
       />
           <ContactsCard
-        centerName={"CELT Bakıxanov"}
+        centerName={"CELT High School"}
+        centerName2={"Bakıxanov"}
+
         centerPhone1={"050 396 96 89"}
         centerPhone2={"012 425 25 13"}
         centerLocation={
@@ -235,7 +250,9 @@ function  ContactsSection() {
       />
 
         <ContactsCard
-        centerName={"CELT Nizami"}
+        centerName={"CELT High School"}
+        centerName2={"Nizami"}
+
         centerPhone1={"050 787 57 66"}
         centerPhone2={"012 436 86 87"}
         centerLocation={
@@ -249,7 +266,8 @@ function  ContactsSection() {
 
       />
                     <ContactsCard
-        centerName={"CELT Əcəmi"}
+        centerName={"CELT High School"}
+        centerName2={"Memar Əcəmi"}
         centerPhone1={"070 222 86 84"}
         centerPhone2={"012 430 83 74"}
         centerLocation={
@@ -263,7 +281,9 @@ function  ContactsSection() {
 
       />
                     <ContactsCard
-        centerName={"CELT Həzi Aslanov"}
+        centerName={"CELT High School"}
+        centerName2={"Həzi Aslanov"}
+
         centerPhone1={"050 611 91 00"}
         centerPhone2={"012 599 57 57"}
         centerLocation={
@@ -277,7 +297,8 @@ function  ContactsSection() {
 
       />
             <ContactsCard
-        centerName={"CELT Sumqayıt"}
+        centerName={"CELT High School"}
+        centerName2={"Sumqayıt"}
         centerPhone1={"050 550 51 91"}
         centerPhone2={"018 6540045"}
         centerLocation={
@@ -291,7 +312,8 @@ function  ContactsSection() {
 
       />
             <ContactsCard
-        centerName={"CELT Gənclik"}
+        centerName={"CELT High School"}
+        centerName2={"Gənclik"}
         centerPhone1={"050 348 22 18"}
         centerPhone2={"012 564 26 86"}
         centerLocation={

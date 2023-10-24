@@ -56,7 +56,7 @@ function StudentsPage() {
         }
     </div>
     <div className='loadMoreCont'>
-        {
+        {/* {
             studentState.length % 20==0?
             <div className="showmore" onClick={plusShowMore}>LOAD MORE</div>:''
         }
@@ -64,7 +64,7 @@ function StudentsPage() {
             showMore !==1 ?
         <div className="showless" onClick={minusShowLess}>SHOW LESS</div>:''
 
-        }
+        } */}
     </div>
              
     {/* <!-- Partner End --> */}
