@@ -3,7 +3,7 @@ import cambridge from '../../images/cambridgeimg.jpg'
 import cambridge2 from '../../images/ceq-logo-stacked.png'
 import leftarrow from '../../images/left-arrow-white.png'
 import { useNavigate } from 'react-router-dom'
-
+import triangle from '../../images/triangle.png'
 
 function Cambridge() {
 
@@ -16,7 +16,10 @@ function Cambridge() {
         </div>
         <div className="cambridge-right">
             <div className='diplomatxt'>
-                <h2>CELT High School</h2>
+                <h2 className='diplomatitle'>CELT High School
+                    {/* <div className="triangle"></div> */}
+                    <img className='triangle' src={triangle} alt="" />
+                </h2>
                 <h3>A Level Diploma</h3>
             </div>
             {/* <img className='camb-logo' src={cambridge2} alt="" /> */}

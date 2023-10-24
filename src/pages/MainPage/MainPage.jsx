@@ -70,7 +70,7 @@ function MainPage() {
     <StudentStory/>
     <ApplySection/>
     {/* <!-- Events Start --> */}
-    <div id="rs-events" className="rs-events sec-spacer">
+    {/* <div id="rs-events" className="rs-events sec-spacer">
         <div className="container">
             <div className="sec-title mb-50 text-center">
                 <h2>{language.upcomingEventsTitle}</h2>      
@@ -81,7 +81,7 @@ function MainPage() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     {/* <!-- Events End --> */}
     {/* <!-- Footer Start --> */}
     <Footer/>

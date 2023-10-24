@@ -17,7 +17,7 @@ function TopStudents() {
     useEffect(() => {
         if (studentState.length > 0) {
             const randomStudents = [];
-            while (randomStudents.length < 4) { // Выбираем 4 уникальных студентов
+            while (randomStudents.length < 8) { // Выбираем 4 уникальных студентов
                 const randomIndex = Math.floor(Math.random() * studentState.length);
                 const randomStudent = studentState[randomIndex];
                 if (!randomStudents.includes(randomStudent)) {

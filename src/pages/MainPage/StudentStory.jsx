@@ -1,6 +1,8 @@
 import React from 'react'
 import img from '../../images/Hazal_web_thumb.jpg'
+import { useNavigate } from 'react-router-dom'
 function StudentStory() {
+  const navigate=useNavigate()
   return (
     <div className="container">
       <div className="student-story-container">
@@ -14,7 +16,7 @@ function StudentStory() {
                 <p>Leeds Arts University</p>
             </div>
         </div>
-        <button className='pinkbtn'>SEE ALL STUDENT STORIES 
+        <button className='pinkbtn' onClick={()=>navigate('/graduates')}>SEE ALL STUDENT STORIES 
         <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
       </div>

@@ -46,10 +46,10 @@ function Language() {
     return (
         <div className='lang-select'>
              <img src={selectedLanguage === 'EN' ? enicon : azicon} alt={selectedLanguage} />
-            <div className="lang-select-items">
+            {/* <div className="lang-select-items">
                 <img src='https://cdn.countryflags.com/thumbs/azerbaijan/flag-400.png' alt="azicon" onClick={() => handleLanguageChange('AZ')} />
                 <img src='https://cdn.countryflags.com/thumbs/united-kingdom/flag-800.png' alt="enicon" onClick={() => handleLanguageChange('EN')} />
-            </div>
+            </div> */}
         </div>
     );
 }

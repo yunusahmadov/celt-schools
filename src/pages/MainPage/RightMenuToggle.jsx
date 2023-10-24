@@ -52,7 +52,6 @@ const hrefs = [
   "/courses",
   "/graduates",
   "/contacts ",
-  "/events",
 ];
 
   return (
@@ -102,7 +101,7 @@ const hrefs = [
           <div className="flags-img">
             
           <img src='https://cdn.countryflags.com/thumbs/azerbaijan/flag-400.png' alt="azicon" onClick={() => handleLanguageChange('AZ')} />
-                <img src='https://cdn.countryflags.com/thumbs/united-kingdom/flag-800.png' alt="enicon" onClick={() => handleLanguageChange('EN')} />
+                {/* <img src='https://cdn.countryflags.com/thumbs/united-kingdom/flag-800.png' alt="enicon" onClick={() => handleLanguageChange('EN')} /> */}
           </div>
         </li>
       </ul>

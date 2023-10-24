@@ -62,6 +62,13 @@
     }
 }
 
+@media only screen and (max-width: 1249px) {
+    /* .contact-card h2 {
+        max-width: 65%;
+    } */
+}
+
+
 
 /* Tablet Layout: 991px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -724,14 +731,17 @@ width: auto;
         justify-content: center;
         
       }
+      .broad-section p, .apply-section p{
+        max-width: 65%;
+      }
       
 
 }
 @media only screen and (max-width: 900px) {
-    .contact-card h2{
+    /* .contact-card h2{
 
         max-width: 90%;
-      }
+      } */
 
 
 }
@@ -1286,6 +1296,9 @@ height: 258px;
     .student-story-right h3{
         font-size: 20px;
       }
+      .qualp p {
+        font-size: 14px;
+      }
 }
 
 /* Small Device : 480px. */
@@ -1485,6 +1498,25 @@ height: 258px;
     .preperation-card {
         padding: 10% 2%;
     }
+    .diplomatitle{
+        position: relative;
+        z-index: 0;
+        padding: 5px !important;
+        font-size: 26px;
+
+      }
+      .triangle{
+        width: 46px;
+        height: 44px;
+        position: absolute;
+        right: -46px;
+        top: 0;
+        z-index: 23;
+        
+      }
+      .broad-section h2, .apply-section h2{
+        font-size: 24px;
+      }
 }
 @media only screen and (max-width: 330px) {
 	.cambridge-right h3{

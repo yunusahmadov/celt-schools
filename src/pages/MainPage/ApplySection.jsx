@@ -1,15 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function ApplySection() {
+  const navigate=useNavigate()
   return (
     <div className='apply-section'>
         <div className="overlay"></div>
     <div className="container">
-        <h2>Take the next step: Apply today</h2>
-        <p>Applying for A-levels is simple and quick.</p>
-        <p>We offer a wide range of subjects across sciences, arts and humanities.</p>
-        <p>If you meet our entry requirements and criteria, we will confirm your offer within 48 hours.</p>
-        <button className='pinkbtn'>CONTACT US 
+        <h2>Növbəti addımı atın: Elə indi müraciət edin</h2>
+        <p>Məktəbimizdə oxumaq üçün müraciət sadə və sürətlidir.</p>
+        <p>Sizə yaxın olan kampusu seçirsiniz və əlaqə saxlayırsınız.</p>
+        <p>Məktəbimizdə oxumaq üçün hazırkı bilikləriniz yetərlidirsə, sizə ən qısa zamanda dəvət göndəririk..</p>
+        <button className='pinkbtn' onClick={()=>navigate('contacts')}>Müraciət edin 
         <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
     </div>
