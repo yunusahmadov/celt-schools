@@ -9071,7 +9071,7 @@ ul {
   background-color:rgba(1,1,1,.7);
 }
 .contact-section{
-  padding: 25px 0;
+  /* padding: 25px 0; */
   text-align: center;
   
 }
@@ -9927,14 +9927,14 @@ color: white;
     /* margin-top: 50px; */
     /* font-family: 'Source Sans 3', sans-serif; */
   }
-  .cambridge-right button{
+  /* .cambridge-right button{
     background-color:#333;
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
     font-size: 18px;
     border: none;
-  }
+  } */
   .cambridge-right h3{
     margin: 0;
     margin-top: 15px;
@@ -9967,7 +9967,7 @@ color: white;
 .flexible h2{
   color: white;
   font-size: 42px;
-  font-family: BwDariusBold;
+  font-family: Arial,  sans-serif;
 }
 .flexible-center{
   display: flex;
@@ -10027,7 +10027,7 @@ padding: 75px 0;
 .broad-section h2,
 .apply-section h2{
   color: white;
-  font-family: BwDariusBold;
+  font-family: Arial,sans-serif;
 }
 
 .broad-section p,
@@ -10060,7 +10060,7 @@ max-width: 50%;
 }
 .student-story h3{
   font-size: 32px;
-  font-family: BwDariusBold;
+  font-family: Arial, sans-serif;
 
 }
 .student-story-left{
@@ -10154,4 +10154,70 @@ font-size: 20px;
   top: 0;
   z-index: 23;
   
+}
+.course-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 60px;
+  margin-top: 26px;
+
+}
+.course-card{
+  border-radius: 20px;
+  box-shadow: 0px 12px 24px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-img{
+  position: relative;
+}
+.course-img img{
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 290px;
+  object-fit: cover;
+
+
+}
+.course-img::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 13.3571981941%;
+  background: url('./images/white-bevel-mask.png') no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.course-text{
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.course-text h3{
+  font-size: 20px;
+}
+.course-button button{
+  width: 100%;
+  border: none;
+  background-color: #6cbe98;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 15px 0;
+
+}
+.stud{
+  text-align: right;
+}
+.stud .pinkbtn{
+  padding: 14px 20px 10px;
+
+}
+.contact-section .btn-tabs{
+  margin-top: 30px;
 }

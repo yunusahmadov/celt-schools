@@ -9,7 +9,7 @@ function  ContactsSection() {
 
   return (
     <div className="contact-section">
-    <h2>{language.trainingCenters}</h2>
+    {/* <h2>{language.trainingCenters}</h2> */}
     <div className="btn-tabs">
       <button className={`${showPrimary?'inactive-tab':'active-tab'}`}  onClick={()=>setShowPrimary(false)}>Beynəlxalq Orta Məktəb</button>
       <button className={`${showPrimary?'active-tab':'inactive-tab'}`} onClick={()=>setShowPrimary(true)}>Beynəlxalq İbtidai Siniflər</button>

@@ -1,11 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import StudentCard from '../Students/StudentCard';
+import { useNavigate } from 'react-router-dom';
 
 function TopStudents() {
     const [studentState, setStudentState] = useState([]);
     const [randStudents, setRandStudents] = useState([]);
-
+  const navigate=useNavigate()
+    
     useEffect(() => {
         axios.get('https://phplaravel-944849-3287799.cloudwaysapps.com/api/v1/high-sch-accepted-students?page=1')
             .then(resp => {
@@ -43,7 +45,7 @@ function TopStudents() {
                 ))
             }
             </div>
-     
+            <button onClick={() => navigate('/graduates')} className='pinkbtn'> Bütün tələbələrə bax</button>
         </div>
     );
 }
