@@ -11,12 +11,12 @@ function StudentStory() {
                 <img src={img} alt="" />
             </div>
             <div className="student-story-right">
-                <h3>"Celt definitely helped me build a varied portfolio. I think that being able to show a wide range of skills helped me in my university interview."</h3>
-                <p>Hazal</p>
-                <p>Leeds Arts University</p>
+                <h3>"CELT School diploma mənə universitetə bir başa qəbul olmağıma və burda çox asan oxumağına böyük dəstək oldu. Bakıda oxuduğum dərslərin çoxunu burda təkrarlayıram. Təşəkkürlər hər kəsə. "</h3>
+                <p>Aisha</p>
+                <p>Groningen University</p>
             </div>
         </div>
-        <button className='pinkbtn' onClick={()=>navigate('/graduates')}>SEE ALL STUDENT STORIES 
+        <button className='pinkbtn' onClick={()=>navigate('/graduates')}> Bütün tələbələrə bax
         <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
       </div>

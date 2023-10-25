@@ -26,7 +26,7 @@ function Cambridge() {
             <h3>Dünyanın ən güclü universitetlərinə gedən yol</h3>
             <p>CELT A Level diplomu ilə siz dünyanın ən güclü uniersitetlərinə asan qəbul ola və təhsil ala bilərsiniz. Bizim individual yanaşmamız, sizin bütün sahələrdə uğurlu nəticələr əldə etmənizə zəmanət verir. 
 Siz CELT məktəblərində övladlarınızı dünya standardlarına uyğun yetişdirə bilərsiniz.</p>
-            <button onClick={()=>navigate('/contacts')}>Uğura aparan yolu seçin
+            <button className='pinkbtn' onClick={()=>navigate('/contacts')}>Uğura aparan yolu seçin
                 <img className='leftarrow' src={leftarrow} alt="" /> 
              </button>
             </div>

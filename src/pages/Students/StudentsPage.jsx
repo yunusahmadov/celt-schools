@@ -45,7 +45,8 @@ function StudentsPage() {
     />
 	<RightMenuToggle/>
     {/* <!--Full width header End--> */}
-    <div className="student-container">
+    <div className="container">
+            <div className="student-container">
         {
             studentState?.map((data, i)=>{
                 return(
@@ -55,6 +56,8 @@ function StudentsPage() {
             })
         }
     </div>
+    </div>
+
     <div className='loadMoreCont'>
         {/* {
             studentState.length % 20==0?

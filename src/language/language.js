@@ -4,7 +4,7 @@ export const az_lang = {
       //MainPage
     nav: [
         "Ana səhifə",
-        "Sahələr",
+        "Fənnlər",
         "Tələbələr",
         "Kampus  Ünvanları",
     ],
@@ -100,7 +100,7 @@ export const az_lang = {
         ]
     },
     future:"Gələcək Sahəniz",
-    areas:"Sahələr",
+    areas:"FƏNNLƏR",
     applyBtn:"Müraciət ET",
     courseCard:[
         {

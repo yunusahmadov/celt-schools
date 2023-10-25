@@ -663,7 +663,7 @@ width: auto;
         max-width: 720px;
     }
     .student-card{
-        width: 45%;
+        width: 49%;
     }
     .student-card svg{
         bottom: -30px;
@@ -733,6 +733,9 @@ width: auto;
       }
       .broad-section p, .apply-section p{
         max-width: 65%;
+      }
+      .contact-section .btn-tabs{
+        margin-top: 0px;
       }
       
 
@@ -1145,6 +1148,7 @@ width: auto;
       }
       .contact-card-section{
         grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+        max-width: 95%;
 
       }
       .contact-card{
@@ -1161,7 +1165,7 @@ width: auto;
     height: auto;
 }
 .student-card-top .student-bg{
-height: 258px;    
+/* height: auto;     */
 }
 .student-card svg{
     width: 120px;
@@ -1170,7 +1174,7 @@ height: 258px;
 }
 .student-card-bottom{
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 10px;
 }
 }
@@ -1516,6 +1520,19 @@ height: 258px;
       }
       .broad-section h2, .apply-section h2{
         font-size: 24px;
+      }
+      .course-container{
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      }
+      .course-text h3{
+        font-size: 17px;
+      }
+      .course-text{
+        padding-left: 10px;
+      }
+      .btn-tabs button {
+        padding: 10px 5px;
+        font-size: 14px;
       }
 }
 @media only screen and (max-width: 330px) {
